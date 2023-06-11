@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quiz_app/models/quiz.dart';
 
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
@@ -8,11 +9,14 @@ import 'package:quiz_app/utils/base_navigation.dart';
 import 'package:quiz_app/widget/base_text.dart';
 
 class QuizScreen extends StatefulWidget {
-  const QuizScreen({super.key});
+  const QuizScreen({super.key, required this.quiz});
+  final Quiz quiz;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
 }
+
+int numQuestion = 0;
 
 class _QuizScreenState extends State<QuizScreen> {
   @override
@@ -20,8 +24,32 @@ class _QuizScreenState extends State<QuizScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          _buildContent(),
-          _btnSubmitQuiz(),
+          _buildContent(
+            quiz: widget.quiz,
+            numQuestion: numQuestion,
+            onTap: () {
+              setState(() {
+                // numQuestion = index;
+              });
+            },
+          ),
+          _btnSubmitQuiz(
+            num: numQuestion,
+            prefix: () {
+              setState(() {
+                if (numQuestion != 0) {
+                  numQuestion--;
+                }
+              });
+            },
+            suffix: () {
+              setState(() {
+                if (numQuestion < widget.quiz.questions!.length - 1) {
+                  numQuestion++;
+                }
+              });
+            },
+          ),
         ],
       ),
     );
@@ -31,8 +59,13 @@ class _QuizScreenState extends State<QuizScreen> {
 class _buildContent extends StatelessWidget {
   const _buildContent({
     super.key,
+    required this.quiz,
+    required this.numQuestion,
+    this.onTap,
   });
-
+  final Quiz quiz;
+  final int numQuestion;
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -76,9 +109,7 @@ class _buildContent extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _header(),
-                      SizedBox(height: 54),
-                      _detailQuiz(),
+                      _header(quiz: quiz),
                     ],
                   ),
                 ),
@@ -87,63 +118,58 @@ class _buildContent extends StatelessWidget {
           ),
         ),
         SliverToBoxAdapter(
-          child: _detailContent(),
-        ),
-      ],
-    );
-  }
-}
-
-class _detailQuiz extends StatelessWidget {
-  const _detailQuiz({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          width: MediaQuery.of(context).size.width,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              BaseText(
-                'UI UX Design Quiz',
-                style: TxtStyle.font18(AppColors.background),
+              Wrap(
+                children: [
+                  for (int i = 0; i < quiz.questions!.length; i++)
+                    Container(
+                      width: 32,
+                      height: 32,
+                      margin: EdgeInsets.only(left: 8, bottom: 6),
+                      decoration: BoxDecoration(
+                        color: AppColors.border,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      alignment: Alignment.center,
+                      child: Text((i + 1).toString()),
+                    )
+                ],
               ),
-              BaseText(
-                'GET 100 Points',
-                style: TxtStyle.font12(AppColors.background),
-              ),
+              Divider(),
+              SizedBox(height: 16),
+              _detailContent(quiz: quiz, numQuestion: numQuestion),
             ],
           ),
         ),
-        Positioned(
-          right: 0,
-          top: 0,
-          bottom: 0,
-          child: Row(
-            children: [
-              SvgPicture.asset('res/icons/star.svg'),
-              SizedBox(width: 8),
-              Text(
-                '4.8',
-                style: TxtStyle.font18(AppColors.background),
-              ),
-            ],
-          ),
-        )
       ],
     );
   }
 }
 
-class _detailContent extends StatelessWidget {
+class _detailContent extends StatefulWidget {
   const _detailContent({
     super.key,
+    required this.quiz,
+    required this.numQuestion,
   });
+  final Quiz quiz;
+  final int numQuestion;
 
+  @override
+  State<_detailContent> createState() => _detailContentState();
+}
+
+class _detailContentState extends State<_detailContent> {
+  void onUserSelect(int data) {
+    setState(
+      () {
+        isChoose = data;
+      },
+    );
+  }
+
+  int isChoose = -1;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -154,26 +180,32 @@ class _detailContent extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'What is the meaning of UI UX Design ?',
+              "Question  ${widget.numQuestion + 1}: ${widget.quiz.questions![widget.numQuestion].question ?? ""}",
               style: TxtStyle.font16(AppColors.line),
             ),
-            SizedBox(height: 27),
-            _chooseAsswer(
-              choose: 'A',
-              text: 'User Interfoce and User Experience',
+            if (widget.quiz.questions![widget.numQuestion].image != null)
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: Image.asset(
+                    widget.quiz.questions![widget.numQuestion].image!),
+              ),
+            ListView.builder(
+              itemCount:
+                  widget.quiz.questions![widget.numQuestion].options?.length,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return _chooseAsswer(
+                  onTap: () {
+                    onUserSelect(index);
+                  },
+                  isChoose: index == isChoose,
+                  choose: 'A',
+                  text: widget
+                      .quiz.questions![widget.numQuestion].options![index],
+                );
+              },
             ),
-            _chooseAsswer(
-              choose: 'B',
-              text: 'User Interfoce and User Experience',
-            ),
-            _chooseAsswer(
-              choose: 'C',
-              text: 'User Interfoce and User Experience',
-            ),
-            _chooseAsswer(
-              choose: 'D',
-              text: 'User Interfoce and User Experience',
-            )
+            SizedBox(height: 150)
           ],
         ),
       ),
@@ -187,10 +219,12 @@ class _chooseAsswer extends StatelessWidget {
     required this.choose,
     required this.text,
     this.isChoose = false,
+    required this.onTap,
   }) : super(key: key);
 
   final String? choose;
   final String? text;
+  final VoidCallback onTap;
   final bool isChoose;
   @override
   Widget build(BuildContext context) {
@@ -201,6 +235,7 @@ class _chooseAsswer extends StatelessWidget {
       child: Row(
         children: [
           GestureDetector(
+            onTap: onTap,
             child: Container(
               height: 50,
               width: 50,
@@ -232,10 +267,21 @@ class _chooseAsswer extends StatelessWidget {
 class _btnSubmitQuiz extends StatelessWidget {
   const _btnSubmitQuiz({
     super.key,
+    this.prefix,
+    this.submit,
+    this.suffix,
+    this.num,
   });
+
+  final VoidCallback? prefix;
+  final VoidCallback? submit;
+  final VoidCallback? suffix;
+  final int? num;
 
   @override
   Widget build(BuildContext context) {
+    final LinearGradient notChoose =
+        LinearGradient(colors: [AppColors.label, AppColors.label]);
     return Positioned(
       bottom: 0,
       child: Container(
@@ -245,17 +291,19 @@ class _btnSubmitQuiz extends StatelessWidget {
         child: Row(
           children: [
             GestureDetector(
+              onTap: prefix,
               child: Container(
                 height: 50,
                 width: 50,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    gradient: AppColors.myGradient,
+                    gradient: num != 0 ? AppColors.myGradient : notChoose,
                     borderRadius: BorderRadius.circular(100)),
                 child: SvgPicture.asset('res/icons/previous.svg'),
               ),
             ),
             GestureDetector(
+              onTap: submit,
               child: Container(
                 height: 50,
                 width: MediaQuery.of(context).size.width - 180,
@@ -266,12 +314,13 @@ class _btnSubmitQuiz extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Text(
-                  'Start Quiz',
+                  'Submit',
                   style: TxtStyle.font16(AppColors.body),
                 ),
               ),
             ),
             GestureDetector(
+              onTap: suffix,
               child: Container(
                 height: 50,
                 width: 50,
@@ -292,7 +341,10 @@ class _btnSubmitQuiz extends StatelessWidget {
 class _header extends StatelessWidget {
   const _header({
     super.key,
+    required this.quiz,
   });
+
+  final Quiz quiz;
 
   @override
   Widget build(BuildContext context) {
@@ -309,7 +361,7 @@ class _header extends StatelessWidget {
             ),
             SizedBox(width: 16),
             Text(
-              'UI UX Design Quiz',
+              quiz.name ?? "",
               style: TxtStyle.font18(AppColors.background),
             ),
           ],

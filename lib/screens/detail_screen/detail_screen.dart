@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:quiz_app/manager/manager_router.dart';
+import 'package:quiz_app/models/quiz.dart';
 import 'package:quiz_app/screens/quiz_screen/quiz_screen.dart';
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
-import 'package:quiz_app/utils/base_navigation.dart';
 import 'package:quiz_app/widget/base_text.dart';
 
 class DetailScreen extends StatefulWidget {
-  const DetailScreen({super.key});
+  const DetailScreen({super.key, required this.quiz});
+  final Quiz quiz;
 
   @override
   State<DetailScreen> createState() => _DetailScreenState();
@@ -20,8 +20,8 @@ class _DetailScreenState extends State<DetailScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          _buildContent(),
-          _btnStartQuiz(),
+          _buildContent(quiz: widget.quiz),
+          _btnStartQuiz(quiz: widget.quiz),
         ],
       ),
     );
@@ -31,7 +31,10 @@ class _DetailScreenState extends State<DetailScreen> {
 class _buildContent extends StatelessWidget {
   const _buildContent({
     super.key,
+    required this.quiz,
   });
+
+  final Quiz quiz;
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +81,7 @@ class _buildContent extends StatelessWidget {
                     children: [
                       _header(),
                       SizedBox(height: 54),
-                      _detailQuiz(),
+                      _detailQuiz(quiz: quiz),
                     ],
                   ),
                 ),
@@ -87,7 +90,7 @@ class _buildContent extends StatelessWidget {
           ),
         ),
         SliverToBoxAdapter(
-          child: _detailContent(),
+          child: _detailContent(quiz: quiz),
         ),
       ],
     );
@@ -97,7 +100,9 @@ class _buildContent extends StatelessWidget {
 class _detailContent extends StatelessWidget {
   const _detailContent({
     super.key,
+    required this.quiz,
   });
+  final Quiz quiz;
 
   @override
   Widget build(BuildContext context) {
@@ -115,13 +120,13 @@ class _detailContent extends StatelessWidget {
             ),
             SizedBox(height: 16),
             _iconText(
-              text: '10 Question',
-              title: '10 point for a correct answer',
+              text: '${quiz.questions!.length} Question',
+              title: '${quiz.totalPoint} point for a correct answer',
               prefix: SvgPicture.asset('res/icons/note.svg'),
             ),
             SizedBox(height: 16),
             _iconText(
-              text: '1 hour 15 min',
+              text: '${quiz.totalHour} hour ${quiz.totalMin} min',
               title: 'Total duration of the quiz',
               prefix: SvgPicture.asset('res/icons/clock.svg'),
             ),
@@ -236,7 +241,10 @@ class _iconText extends StatelessWidget {
 class _detailQuiz extends StatelessWidget {
   const _detailQuiz({
     super.key,
+    required this.quiz,
   });
+
+  final Quiz quiz;
 
   @override
   Widget build(BuildContext context) {
@@ -248,11 +256,11 @@ class _detailQuiz extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               BaseText(
-                'UI UX Design Quiz',
+                quiz.name ?? "",
                 style: TxtStyle.font18(AppColors.background),
               ),
               BaseText(
-                'GET 100 Points',
+                "GET ${(quiz.totalPoint! * quiz.questions!.length).toString()} Point",
                 style: TxtStyle.font12(AppColors.background),
               ),
             ],
@@ -267,7 +275,7 @@ class _detailQuiz extends StatelessWidget {
               SvgPicture.asset('res/icons/star.svg'),
               SizedBox(width: 8),
               Text(
-                '4.8',
+                quiz.rating.toString(),
                 style: TxtStyle.font18(AppColors.background),
               ),
             ],
@@ -281,7 +289,9 @@ class _detailQuiz extends StatelessWidget {
 class _btnStartQuiz extends StatelessWidget {
   const _btnStartQuiz({
     super.key,
+    required this.quiz,
   });
+  final Quiz quiz;
 
   @override
   Widget build(BuildContext context) {
@@ -295,7 +305,7 @@ class _btnStartQuiz extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const QuizScreen()),
+              MaterialPageRoute(builder: (context) => QuizScreen(quiz: quiz)),
             );
           },
           child: Container(

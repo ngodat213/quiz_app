@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/question.dart';
@@ -5,8 +7,9 @@ import 'package:quiz_app/models/quiz.dart';
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
 import 'package:quiz_app/widget/base_text.dart';
-import 'package:quiz_app/widget/continue_card.dart';
 import 'package:quiz_app/widget/quiz_card.dart';
+
+import 'package:flutter/services.dart' as rootBundle;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,24 +19,32 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final Quiz quiz = Quiz(
-    id: 1,
-    name: 'UI UX Design',
-    totalHour: 1,
-    totalMin: 15,
-    rating: 4.8,
-    questions: [
-      Question(
-        id: 1,
-        aswer: 1,
-        questions: ['A', 'B', 'C', 'D'],
-      ),
-    ],
-  );
+  List<Quiz> quizs = [];
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+
+  Future<void> loadData() async {
+    List<Quiz> quiz = await getDataJson();
+    setState(() {
+      quizs = quiz;
+    });
+  }
+
+  Future<List<Quiz>> getDataJson() async {
+    final jsondata =
+        await rootBundle.rootBundle.loadString("lib/json/quiz.json");
+    final list = json.decode(jsondata) as List<dynamic>;
+    return list.map((e) => Quiz.fromJson(e)).toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _buildContent(quiz: quiz),
+      body: _buildContent(quizs: quizs),
     );
   }
 }
@@ -41,10 +52,10 @@ class _HomeScreenState extends State<HomeScreen> {
 class _buildContent extends StatefulWidget {
   const _buildContent({
     super.key,
-    required this.quiz,
+    required this.quizs,
   });
 
-  final Quiz quiz;
+  final List<Quiz> quizs;
 
   @override
   State<_buildContent> createState() => _buildContentState();
@@ -159,9 +170,13 @@ class _buildContentState extends State<_buildContent>
                       style: TxtStyle.font18(AppColors.line),
                     ),
                   ),
-                  QuizCard(quiz: widget.quiz),
-                  QuizCard(quiz: widget.quiz),
-                  QuizCard(quiz: widget.quiz),
+                  ListView.builder(
+                    itemCount: widget.quizs.length,
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      return QuizCard(quiz: widget.quizs[index]);
+                    },
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 24),
                     child: Text(
@@ -169,9 +184,6 @@ class _buildContentState extends State<_buildContent>
                       style: TxtStyle.font18(AppColors.line),
                     ),
                   ),
-                  ContinueCard(quiz: widget.quiz),
-                  ContinueCard(quiz: widget.quiz),
-                  ContinueCard(quiz: widget.quiz),
                   SizedBox(height: 36),
                 ],
               ),
@@ -179,37 +191,6 @@ class _buildContentState extends State<_buildContent>
           ),
         ),
       ],
-    );
-  }
-}
-
-class _btnStartQuiz extends StatelessWidget {
-  const _btnStartQuiz({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      bottom: 0,
-      child: Container(
-        padding: EdgeInsets.only(top: 16),
-        color: AppColors.background,
-        child: GestureDetector(
-          child: Container(
-            height: 50,
-            width: MediaQuery.of(context).size.width,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              gradient: AppColors.myGradient,
-            ),
-            child: Text(
-              'Start Quiz',
-              style: TxtStyle.font16(AppColors.background),
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
