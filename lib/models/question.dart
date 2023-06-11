@@ -2,7 +2,7 @@ class Question {
   int? id;
   String? question;
   List<String>? options;
-  int? aswer;
+  int? answer;
   String? image;
   int? userChoose;
 
@@ -10,7 +10,7 @@ class Question {
       {this.id,
       this.question,
       this.options,
-      this.aswer,
+      this.answer,
       this.image,
       this.userChoose});
 
@@ -18,7 +18,7 @@ class Question {
     id = json['id'];
     question = json['question'];
     options = json['options'].cast<String>();
-    aswer = json['aswer'];
+    answer = json['answer'];
     image = json['image'];
   }
 
@@ -27,7 +27,7 @@ class Question {
     data['id'] = this.id;
     data['question'] = this.question;
     data['options'] = this.options;
-    data['aswer'] = this.aswer;
+    data['answer'] = this.answer;
     data['image'] = this.image;
     return data;
   }

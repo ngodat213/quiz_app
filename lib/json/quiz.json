@@ -9,23 +9,23 @@
                 "id": 1,
                 "question": "What your choice",
                 "options": [
-                    "A",
-                    "B",
-                    "C",
-                    "D"
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
                 ],
-                "aswer": 1
+                "answer": 1
             },
             {
                 "id": 1,
                 "question": "What your choice",
                 "options": [
-                    "A",
-                    "B",
-                    "C",
-                    "D"
+                    "3 6",
+                    "3 3",
+                    "3 7",
+                    "7 3"
                 ],
-                "aswer": 1,
+                "answer": 3,
                 "image": "res/images/1_1.png"
             },
             {
@@ -37,7 +37,107 @@
                     "C",
                     "D"
                 ],
-                "aswer": 1
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
+            },{
+                "id": 1,
+                "question": "What your choice",
+                "options": [
+                    "Hi my name is Dat",
+                    "Hi my name is Tuong",
+                    "Hi my name is Nam",
+                    "Hi my name is Tuan"
+                ],
+                "answer": 1
             }
         ],
         "totalPoint": 10,

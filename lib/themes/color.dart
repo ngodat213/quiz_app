@@ -29,6 +29,24 @@ class AppColors {
     ],
   );
 
+  static LinearGradient trueAswer = LinearGradient(
+    end: Alignment.bottomRight,
+    begin: Alignment.topLeft,
+    colors: [
+      Colors.green,
+      Colors.green,
+    ],
+  );
+
+  static LinearGradient falseAswer = LinearGradient(
+    end: Alignment.bottomRight,
+    begin: Alignment.topLeft,
+    colors: [
+      Colors.red,
+      Colors.red,
+    ],
+  );
+
   static BoxShadow myShadow = BoxShadow(
     color: Color.fromRGBO(51, 51, 51, 0.1),
     offset: Offset(10, 24),

@@ -1,43 +1,42 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quiz_app/models/question.dart';
 import 'package:quiz_app/models/quiz.dart';
-import 'package:quiz_app/screens/submit_screen/submit_screen.dart';
-
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
 import 'package:quiz_app/utils/base_navigation.dart';
 import 'package:quiz_app/widget/base_text.dart';
 
-class QuizScreen extends StatefulWidget {
-  const QuizScreen({super.key, required this.quiz});
+class SubmitScreen extends StatefulWidget {
+  const SubmitScreen({
+    super.key,
+    required this.quiz,
+    required this.userChooice,
+  });
   final Quiz quiz;
+  final List<int> userChooice;
 
   @override
-  State<QuizScreen> createState() => _QuizScreenState();
+  State<SubmitScreen> createState() => _SubmitScreenState();
 }
 
-class _QuizScreenState extends State<QuizScreen> {
-  void onUserSelect(int data) {
-    setState(
-      () {
-        isChooseList[numQuestion] = data;
-      },
-    );
+int numQuestion = 0;
+
+class _SubmitScreenState extends State<SubmitScreen> {
+  late List<bool> result = List.filled(widget.quiz.questions!.length, false);
+  @override
+  void initState() {
+    super.initState();
+    for (int i = 0; i < widget.quiz.questions!.length; i++) {
+      bool res = widget.userChooice[i] == widget.quiz.questions![i].answer;
+      result[i] = res;
+    }
   }
 
-  void updateIsChooseList(List<int> newIsChooseList) {
-    setState(() {
-      isChooseList = newIsChooseList;
-    });
-  }
-
-  int numQuestion = 0;
-  late List<int> isChooseList = List.filled(widget.quiz.questions!.length, -1);
   @override
   Widget build(BuildContext context) {
-    print(isChooseList.toString());
-    final List<String> choose = ['A', 'B', 'C', 'D'];
+    final List<String> option = ['A', 'B', 'C', 'D'];
+    print(widget.userChooice.toString());
     return Scaffold(
       body: Stack(
         children: [
@@ -45,7 +44,7 @@ class _QuizScreenState extends State<QuizScreen> {
             slivers: [
               SliverAppBar(
                 pinned: true,
-                expandedHeight: 88,
+                expandedHeight: 223,
                 elevation: 0,
                 bottom: PreferredSize(
                   preferredSize: Size.fromHeight(0),
@@ -102,19 +101,13 @@ class _QuizScreenState extends State<QuizScreen> {
                             height: 32,
                             margin: EdgeInsets.only(left: 8, bottom: 6),
                             decoration: BoxDecoration(
-                              color: isChooseList[i] == -1
-                                  ? AppColors.border
-                                  : AppColors.body,
+                              color: result[i] ? Colors.green : Colors.red,
                               borderRadius: BorderRadius.circular(100),
                             ),
                             alignment: Alignment.center,
                             child: Text(
                               (i + 1).toString(),
-                              style: TxtStyle.font16(
-                                isChooseList[i] != -1
-                                    ? AppColors.border
-                                    : AppColors.titleActive,
-                              ),
+                              style: TxtStyle.font16(AppColors.border),
                             ),
                           )
                       ],
@@ -144,18 +137,19 @@ class _QuizScreenState extends State<QuizScreen> {
                                   .quiz.questions![numQuestion].options?.length,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
+                                final Question quesN =
+                                    widget.quiz.questions![numQuestion];
+                                print(quesN.answer);
                                 return _chooseAsswer(
-                                  onTap: () {
-                                    onUserSelect(index);
-                                  },
-                                  isChoose: index == isChooseList[numQuestion],
-                                  choose: choose[index],
-                                  text: widget.quiz.questions![numQuestion]
-                                      .options![index],
+                                  choose: option[index],
+                                  text: quesN.options![index],
+                                  isAnswer: index == quesN.answer,
+                                  userChoice:
+                                      widget.userChooice[numQuestion] != index,
                                 );
                               },
                             ),
-                            SizedBox(height: 150)
+                            SizedBox(height: 250)
                           ],
                         ),
                       ),
@@ -174,17 +168,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 }
               });
             },
-            submit: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => SubmitScreen(
-                    quiz: widget.quiz,
-                    userChooice: isChooseList,
-                  ),
-                ),
-              );
-            },
+            submit: () {},
             suffix: () {
               setState(() {
                 if (numQuestion < widget.quiz.questions!.length - 1) {
@@ -204,14 +188,14 @@ class _chooseAsswer extends StatelessWidget {
     Key? key,
     required this.choose,
     required this.text,
-    this.isChoose = false,
-    required this.onTap,
+    this.isAnswer,
+    this.userChoice,
   }) : super(key: key);
 
+  final bool? userChoice;
   final String? choose;
   final String? text;
-  final VoidCallback onTap;
-  final bool isChoose;
+  final bool? isAnswer;
   @override
   Widget build(BuildContext context) {
     final LinearGradient notChoose =
@@ -220,20 +204,19 @@ class _chooseAsswer extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 16),
       child: Row(
         children: [
-          GestureDetector(
-            onTap: onTap,
-            child: Container(
-              height: 50,
-              width: 50,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  gradient: isChoose ? AppColors.myGradient : notChoose,
-                  borderRadius: BorderRadius.circular(100)),
-              child: Text(
-                choose!.toUpperCase(),
-                style: TxtStyle.font18(
-                  AppColors.background,
-                ),
+          Container(
+            height: 50,
+            width: 50,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+                gradient: (isAnswer == true || userChoice == isAnswer)
+                    ? AppColors.trueAswer
+                    : notChoose,
+                borderRadius: BorderRadius.circular(100)),
+            child: Text(
+              choose!.toUpperCase(),
+              style: TxtStyle.font18(
+                AppColors.background,
               ),
             ),
           ),
@@ -334,10 +317,11 @@ class _header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             GestureDetector(
               onTap: () {
@@ -347,27 +331,35 @@ class _header extends StatelessWidget {
             ),
             SizedBox(width: 16),
             Text(
-              quiz.name ?? "",
+              "Result",
               style: TxtStyle.font18(AppColors.background),
             ),
           ],
         ),
-        Container(
-          width: 77,
-          height: 24,
-          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-          decoration: BoxDecoration(
-            color: AppColors.background,
-            borderRadius: BorderRadius.circular(100),
-          ),
-          alignment: Alignment.center,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              SvgPicture.asset('res/icons/clock.svg'),
-              Text('16:35'),
-            ],
-          ),
+        SizedBox(height: 16),
+        Text(
+          '${quiz.name}',
+          style: TxtStyle.font18(AppColors.background),
+        ),
+        SizedBox(height: 8),
+        Text(
+          'SỐ CÂU TRẢ LỜI ĐÚNG: 0',
+          style: TxtStyle.font12(AppColors.background),
+        ),
+        SizedBox(height: 8),
+        Text(
+          'SỐ CÂU TRẢ LỜI SAI: 13',
+          style: TxtStyle.font12(AppColors.background),
+        ),
+        SizedBox(height: 8),
+        Text(
+          'SỐ CÂU CHƯA TRẢ LỜI: 13',
+          style: TxtStyle.font12(AppColors.background),
+        ),
+        SizedBox(height: 8),
+        Text(
+          'XẾP LOẠI: GIỎI',
+          style: TxtStyle.font12(AppColors.background),
         )
       ],
     );
