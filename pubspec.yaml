@@ -17,6 +17,8 @@ dependencies:
   font_awesome_flutter: ^9.2.0 # font awesome
   number_paginator: ^0.2.3 # number page
   google_fonts: ^4.0.4 # load fonts
+  cloud_firestore: ^4.8.0 # firebase
+  firebase_database: ^10.2.2 #realtime firebase
 
 dev_dependencies:
   flutter_test:

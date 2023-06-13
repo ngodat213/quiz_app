@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:quiz_app/models/quiz.dart';
+import 'package:quiz_app/models/lesson.dart';
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
 import 'package:quiz_app/widget/text_icon.dart';
@@ -10,7 +10,7 @@ class ContinueCard extends StatelessWidget {
     super.key,
     required this.quiz,
   });
-  final Quiz quiz;
+  final Lesson quiz;
   @override
   Widget build(BuildContext context) {
     return Container(

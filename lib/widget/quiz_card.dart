@@ -44,7 +44,7 @@ class QuizCard extends StatelessWidget {
                     ),
                     SizedBox(height: 8),
                     TextIcon(
-                      '${quiz.questions?.length} Question',
+                      '${quiz.lessons!.length} Lesson',
                       prefix: SvgPicture.asset('res/icons/note.svg'),
                     ),
                     SizedBox(height: 4),

@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/question.dart';
-import 'package:quiz_app/models/quiz.dart';
+import 'package:quiz_app/models/lesson.dart';
+import 'package:quiz_app/screens/home_screen/home_screen.dart';
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
 import 'package:quiz_app/utils/base_navigation.dart';
-import 'package:quiz_app/widget/base_text.dart';
 
-class SubmitScreen extends StatefulWidget {
-  const SubmitScreen({
+class CheckAnswer extends StatefulWidget {
+  const CheckAnswer({
     super.key,
     required this.quiz,
     required this.userChooice,
   });
-  final Quiz quiz;
+  final Lesson quiz;
   final List<int> userChooice;
 
   @override
-  State<SubmitScreen> createState() => _SubmitScreenState();
+  State<CheckAnswer> createState() => _CheckAnswerState();
 }
 
 int numQuestion = 0;
 
-class _SubmitScreenState extends State<SubmitScreen> {
+class _CheckAnswerState extends State<CheckAnswer> {
   late List<bool> result = List.filled(widget.quiz.questions!.length, false);
   @override
   void initState() {
@@ -44,8 +44,9 @@ class _SubmitScreenState extends State<SubmitScreen> {
             slivers: [
               SliverAppBar(
                 pinned: true,
-                expandedHeight: 223,
+                expandedHeight: 88,
                 elevation: 0,
+                backgroundColor: AppColors.background,
                 bottom: PreferredSize(
                   preferredSize: Size.fromHeight(0),
                   child: Container(
@@ -115,7 +116,6 @@ class _SubmitScreenState extends State<SubmitScreen> {
                     Divider(),
                     SizedBox(height: 16),
                     Container(
-                      color: AppColors.background,
                       margin: EdgeInsets.symmetric(horizontal: 24),
                       child: SingleChildScrollView(
                         child: Column(
@@ -168,7 +168,12 @@ class _SubmitScreenState extends State<SubmitScreen> {
                 }
               });
             },
-            submit: () {},
+            submit: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+              );
+            },
             suffix: () {
               setState(() {
                 if (numQuestion < widget.quiz.questions!.length - 1) {
@@ -209,9 +214,7 @@ class _chooseAsswer extends StatelessWidget {
             width: 50,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-                gradient: (isAnswer == true || userChoice == isAnswer)
-                    ? AppColors.trueAswer
-                    : notChoose,
+                gradient: isAnswer! ? AppColors.trueAswer : notChoose,
                 borderRadius: BorderRadius.circular(100)),
             child: Text(
               choose!.toUpperCase(),
@@ -221,10 +224,13 @@ class _chooseAsswer extends StatelessWidget {
             ),
           ),
           SizedBox(width: 8),
-          BaseText(
-            text ?? "",
-            style: TxtStyle.font14(
-              AppColors.line,
+          Container(
+            width: MediaQuery.of(context).size.width - 48 - 50 - 8,
+            child: Text(
+              text ?? "",
+              style: TxtStyle.font14(
+                AppColors.line,
+              ),
             ),
           )
         ],
@@ -313,7 +319,7 @@ class _header extends StatelessWidget {
     required this.quiz,
   });
 
-  final Quiz quiz;
+  final Lesson quiz;
 
   @override
   Widget build(BuildContext context) {
@@ -331,36 +337,11 @@ class _header extends StatelessWidget {
             ),
             SizedBox(width: 16),
             Text(
-              "Result",
+              "Check Answer",
               style: TxtStyle.font18(AppColors.background),
             ),
           ],
         ),
-        SizedBox(height: 16),
-        Text(
-          '${quiz.name}',
-          style: TxtStyle.font18(AppColors.background),
-        ),
-        SizedBox(height: 8),
-        Text(
-          'SỐ CÂU TRẢ LỜI ĐÚNG: 0',
-          style: TxtStyle.font12(AppColors.background),
-        ),
-        SizedBox(height: 8),
-        Text(
-          'SỐ CÂU TRẢ LỜI SAI: 13',
-          style: TxtStyle.font12(AppColors.background),
-        ),
-        SizedBox(height: 8),
-        Text(
-          'SỐ CÂU CHƯA TRẢ LỜI: 13',
-          style: TxtStyle.font12(AppColors.background),
-        ),
-        SizedBox(height: 8),
-        Text(
-          'XẾP LOẠI: GIỎI',
-          style: TxtStyle.font12(AppColors.background),
-        )
       ],
     );
   }

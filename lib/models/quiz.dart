@@ -1,61 +1,36 @@
-import 'package:quiz_app/models/question.dart';
+import 'package:quiz_app/models/lesson.dart';
 
 class Quiz {
-  int? id;
+  int? quizId;
   String? name;
-  int? totalHour;
-  int? totalMin;
-  List<Question>? questions;
-  int? totalPoint;
+  int? getPoint;
   double? rating;
+  List<Lesson>? lessons;
 
-  Quiz({
-    this.id,
-    this.name,
-    this.totalHour,
-    this.totalMin,
-    this.questions,
-    this.totalPoint,
-    this.rating,
-  });
-
-  Quiz.clone(Quiz quiz)
-      : this(
-          id: quiz.id,
-          name: quiz.name,
-          totalHour: quiz.totalHour,
-          totalMin: quiz.totalMin,
-          questions: quiz.questions,
-          totalPoint: quiz.totalPoint,
-          rating: quiz.rating,
-        );
+  Quiz({this.quizId, this.name, this.getPoint, this.rating, this.lessons});
 
   Quiz.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
+    quizId = json['quizId'];
     name = json['name'];
-    totalHour = json['totalHour'];
-    totalMin = json['totalMin'];
-    if (json['questions'] != null) {
-      questions = <Question>[];
-      json['questions'].forEach((v) {
-        questions!.add(new Question.fromJson(v));
+    getPoint = json['getPoint'];
+    rating = json['rating'];
+    if (json['lessons'] != null) {
+      lessons = <Lesson>[];
+      json['lessons'].forEach((v) {
+        lessons!.add(new Lesson.fromJson(v));
       });
     }
-    totalPoint = json['totalPoint'];
-    rating = json['rating'].toDouble();
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
+    data['quizId'] = this.quizId;
     data['name'] = this.name;
-    data['totalHour'] = this.totalHour;
-    data['totalMin'] = this.totalMin;
-    if (this.questions != null) {
-      data['questions'] = this.questions!.map((v) => v.toJson()).toList();
-    }
-    data['totalPoint'] = this.totalPoint;
+    data['getPoint'] = this.getPoint;
     data['rating'] = this.rating;
+    if (this.lessons != null) {
+      data['lessons'] = this.lessons!.map((v) => v.toJson()).toList();
+    }
     return data;
   }
 }

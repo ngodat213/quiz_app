@@ -1,17 +1,15 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:quiz_app/models/quiz.dart';
-import 'package:quiz_app/screens/submit_screen/submit_screen.dart';
+import 'package:quiz_app/models/lesson.dart';
+import 'package:quiz_app/screens/result_screen/result_screen.dart';
 
 import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
 import 'package:quiz_app/utils/base_navigation.dart';
-import 'package:quiz_app/widget/base_text.dart';
 
 class QuizScreen extends StatefulWidget {
-  const QuizScreen({super.key, required this.quiz});
-  final Quiz quiz;
+  const QuizScreen({super.key, required this.lesson});
+  final Lesson lesson;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -33,7 +31,8 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   int numQuestion = 0;
-  late List<int> isChooseList = List.filled(widget.quiz.questions!.length, -1);
+  late List<int> isChooseList =
+      List.filled(widget.lesson.questions!.length, -1);
   @override
   Widget build(BuildContext context) {
     print(isChooseList.toString());
@@ -47,6 +46,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 pinned: true,
                 expandedHeight: 88,
                 elevation: 0,
+                backgroundColor: AppColors.background,
                 bottom: PreferredSize(
                   preferredSize: Size.fromHeight(0),
                   child: Container(
@@ -83,7 +83,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            _header(quiz: widget.quiz),
+                            _header(lesson: widget.lesson),
                           ],
                         ),
                       ),
@@ -96,7 +96,9 @@ class _QuizScreenState extends State<QuizScreen> {
                   children: [
                     Wrap(
                       children: [
-                        for (int i = 0; i < widget.quiz.questions!.length; i++)
+                        for (int i = 0;
+                            i < widget.lesson.questions!.length;
+                            i++)
                           Container(
                             width: 32,
                             height: 32,
@@ -122,26 +124,25 @@ class _QuizScreenState extends State<QuizScreen> {
                     Divider(),
                     SizedBox(height: 16),
                     Container(
-                      color: AppColors.background,
                       margin: EdgeInsets.symmetric(horizontal: 24),
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Question  ${numQuestion + 1}: ${widget.quiz.questions![numQuestion].question ?? ""}",
+                              "Question  ${numQuestion + 1}: ${widget.lesson.questions![numQuestion].question ?? ""}",
                               style: TxtStyle.font16(AppColors.line),
                             ),
-                            if (widget.quiz.questions![numQuestion].image !=
+                            if (widget.lesson.questions![numQuestion].image !=
                                 null)
                               Container(
                                 padding: EdgeInsets.symmetric(vertical: 8),
-                                child: Image.asset(
-                                    widget.quiz.questions![numQuestion].image!),
+                                child: Image.asset(widget
+                                    .lesson.questions![numQuestion].image!),
                               ),
                             ListView.builder(
-                              itemCount: widget
-                                  .quiz.questions![numQuestion].options?.length,
+                              itemCount: widget.lesson.questions![numQuestion]
+                                  .options?.length,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
                                 return _chooseAsswer(
@@ -150,7 +151,7 @@ class _QuizScreenState extends State<QuizScreen> {
                                   },
                                   isChoose: index == isChooseList[numQuestion],
                                   choose: choose[index],
-                                  text: widget.quiz.questions![numQuestion]
+                                  text: widget.lesson.questions![numQuestion]
                                       .options![index],
                                 );
                               },
@@ -178,8 +179,8 @@ class _QuizScreenState extends State<QuizScreen> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => SubmitScreen(
-                    quiz: widget.quiz,
+                  builder: (context) => ResultScreen(
+                    lesson: widget.lesson,
                     userChooice: isChooseList,
                   ),
                 ),
@@ -187,7 +188,7 @@ class _QuizScreenState extends State<QuizScreen> {
             },
             suffix: () {
               setState(() {
-                if (numQuestion < widget.quiz.questions!.length - 1) {
+                if (numQuestion < widget.lesson.questions!.length - 1) {
                   numQuestion++;
                 }
               });
@@ -238,10 +239,13 @@ class _chooseAsswer extends StatelessWidget {
             ),
           ),
           SizedBox(width: 8),
-          BaseText(
-            text ?? "",
-            style: TxtStyle.font14(
-              AppColors.line,
+          Container(
+            width: MediaQuery.of(context).size.width - 48 - 50 - 8,
+            child: Text(
+              text ?? "",
+              style: TxtStyle.font14(
+                AppColors.line,
+              ),
             ),
           )
         ],
@@ -327,10 +331,10 @@ class _btnSubmitQuiz extends StatelessWidget {
 class _header extends StatelessWidget {
   const _header({
     super.key,
-    required this.quiz,
+    required this.lesson,
   });
 
-  final Quiz quiz;
+  final Lesson lesson;
 
   @override
   Widget build(BuildContext context) {
@@ -347,7 +351,7 @@ class _header extends StatelessWidget {
             ),
             SizedBox(width: 16),
             Text(
-              quiz.name ?? "",
+              lesson.name ?? "",
               style: TxtStyle.font18(AppColors.background),
             ),
           ],

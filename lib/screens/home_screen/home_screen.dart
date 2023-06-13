@@ -77,6 +77,7 @@ class _buildContentState extends State<_buildContent>
           pinned: true,
           expandedHeight: 223,
           elevation: 0,
+          backgroundColor: AppColors.background,
           bottom: PreferredSize(
             preferredSize: Size.fromHeight(0),
             child: Container(
