@@ -126,9 +126,13 @@ class _ResultScreenState extends State<ResultScreen> {
                             ),
                             _textResult(
                               'CORRECT ANSWER',
-                              result: '$correct/13',
+                              result:
+                                  '$correct/${widget.lesson.questions!.length}',
                             ),
-                            _textResult('INCORRECT ANSWER', result: type),
+                            _textResult(
+                              'INCORRECT ANSWER',
+                              result: type,
+                            ),
                             SizedBox(height: 8),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,

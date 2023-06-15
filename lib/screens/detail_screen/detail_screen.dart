@@ -10,7 +10,6 @@ import 'package:quiz_app/widget/base_text.dart';
 class DetailScreen extends StatefulWidget {
   const DetailScreen({super.key, required this.quiz});
   final Quiz quiz;
-
   @override
   State<DetailScreen> createState() => _DetailScreenState();
 }

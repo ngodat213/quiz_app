@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/quiz.dart';
@@ -7,8 +8,6 @@ import 'package:quiz_app/themes/color.dart';
 import 'package:quiz_app/themes/txt_style.dart';
 import 'package:quiz_app/widget/base_text.dart';
 import 'package:quiz_app/widget/quiz_card.dart';
-
-import 'package:flutter/services.dart' as rootBundle;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,25 +18,17 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<Quiz> quizs = [];
-
+  final DatabaseReference quizRef = FirebaseDatabase.instance.ref();
   @override
   void initState() {
     super.initState();
-    loadData();
-  }
-
-  Future<void> loadData() async {
-    List<Quiz> quiz = await getDataJson();
-    setState(() {
-      quizs = quiz;
+    quizRef.onValue.listen((event) {
+      String data = jsonEncode(event.snapshot.value);
+      final list = jsonDecode(data) as List<dynamic>;
+      for (dynamic i in list) {
+        quizs.add(Quiz.fromJson(i));
+      }
     });
-  }
-
-  Future<List<Quiz>> getDataJson() async {
-    final jsondata =
-        await rootBundle.rootBundle.loadString("lib/json/quiz.json");
-    final list = json.decode(jsondata) as List<dynamic>;
-    return list.map((e) => Quiz.fromJson(e)).toList();
   }
 
   @override
