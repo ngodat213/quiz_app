@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/lesson.dart';
@@ -346,10 +348,12 @@ class _btnStartQuiz extends StatelessWidget {
         color: AppColors.background,
         child: GestureDetector(
           onTap: () {
+            final Lesson random = lesson;
+            lesson.questions!.shuffle(Random());
             Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (context) => QuizScreen(lesson: lesson)),
+                  builder: (context) => QuizScreen(lesson: random)),
             );
           },
           child: Container(

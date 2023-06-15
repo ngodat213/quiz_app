@@ -27,6 +27,7 @@ class _CheckAnswerState extends State<CheckAnswer> {
   @override
   void initState() {
     super.initState();
+    numQuestion = 0;
     for (int i = 0; i < widget.quiz.questions!.length; i++) {
       bool res = widget.userChooice[i] == widget.quiz.questions![i].answer;
       result[i] = res;
@@ -289,7 +290,7 @@ class _btnSubmitQuiz extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Text(
-                  'Submit',
+                  'Go Home',
                   style: TxtStyle.font16(AppColors.body),
                 ),
               ),
