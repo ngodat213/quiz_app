@@ -1,3 +1,23 @@
 {
-    "app_name": "QuizApp"
+    "app_name": "QuizApp",
+    "lesson": "Lesson",
+    "question": "Question",
+    "hour":"hour",
+    "min": "min",
+    "hello": "Hello",
+    "quiz": "Quiz",
+    "search": "Search",
+    "continueQuiz": "Continue Quiz",
+    "math": "Mathematic",
+    "popular": "Popular",
+    "computer": "Computer",
+    "point": "Point",
+    "start": "Start Quiz",
+    "submit": "Submit",
+    "totalQuestion": "Total Questions",
+    "score": "Score",
+    "correctAnswer": "Correct Answer",
+    "incorrect": "Incorrect Answer",
+    "goHome": "Go Home",
+    "checkAnswer": "Check Answer"
 }

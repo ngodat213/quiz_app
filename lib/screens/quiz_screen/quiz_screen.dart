@@ -1,12 +1,12 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quiz_app/generated/l10n.dart';
 import 'package:quiz_app/models/lesson.dart';
 import 'package:quiz_app/screens/result_screen/result_screen.dart';
 
-import 'package:quiz_app/themes/color.dart';
-import 'package:quiz_app/themes/txt_style.dart';
+import 'package:quiz_app/themes/colors.dart';
+import 'package:quiz_app/themes/images.dart';
+import 'package:quiz_app/themes/txt_styles.dart';
 import 'package:quiz_app/utils/base_navigation.dart';
 
 class QuizScreen extends StatefulWidget {
@@ -132,7 +132,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Question  ${numQuestion + 1}: ${widget.lesson.questions![numQuestion].question ?? ""}",
+                              "${S.current.question}  ${numQuestion + 1}: ${widget.lesson.questions![numQuestion].question ?? ""}",
                               style: TxtStyle.font16(AppColors.line),
                             ),
                             if (widget.lesson.questions![numQuestion].image !=
@@ -258,7 +258,6 @@ class _chooseAsswer extends StatelessWidget {
 
 class _btnSubmitQuiz extends StatelessWidget {
   const _btnSubmitQuiz({
-    super.key,
     this.prefix,
     this.submit,
     this.suffix,
@@ -291,7 +290,7 @@ class _btnSubmitQuiz extends StatelessWidget {
                 decoration: BoxDecoration(
                     gradient: num != 0 ? AppColors.myGradient : notChoose,
                     borderRadius: BorderRadius.circular(100)),
-                child: SvgPicture.asset('res/icons/previous.svg'),
+                child: SvgPicture.asset(Images.iconPrevious),
               ),
             ),
             GestureDetector(
@@ -306,7 +305,7 @@ class _btnSubmitQuiz extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Text(
-                  'Submit',
+                  S.current.submit,
                   style: TxtStyle.font16(AppColors.body),
                 ),
               ),
@@ -320,7 +319,7 @@ class _btnSubmitQuiz extends StatelessWidget {
                 decoration: BoxDecoration(
                     gradient: AppColors.myGradient,
                     borderRadius: BorderRadius.circular(100)),
-                child: SvgPicture.asset('res/icons/next.svg'),
+                child: SvgPicture.asset(Images.iconNext),
               ),
             ),
           ],
@@ -332,7 +331,6 @@ class _btnSubmitQuiz extends StatelessWidget {
 
 class _header extends StatelessWidget {
   const _header({
-    super.key,
     required this.lesson,
   });
 
@@ -349,7 +347,7 @@ class _header extends StatelessWidget {
               onTap: () {
                 BaseNavigation.pop(context);
               },
-              child: SvgPicture.asset('res/icons/back_arrow.svg'),
+              child: SvgPicture.asset(Images.iconBackArrow),
             ),
             SizedBox(width: 16),
             Text(
@@ -370,7 +368,7 @@ class _header extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SvgPicture.asset('res/icons/clock.svg'),
+              SvgPicture.asset(Images.iconClock),
               Text('16:35'),
             ],
           ),

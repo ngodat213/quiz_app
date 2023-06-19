@@ -4,9 +4,11 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quiz_app/generated/l10n.dart';
 import 'package:quiz_app/models/quiz.dart';
-import 'package:quiz_app/themes/color.dart';
-import 'package:quiz_app/themes/txt_style.dart';
+import 'package:quiz_app/themes/colors.dart';
+import 'package:quiz_app/themes/images.dart';
+import 'package:quiz_app/themes/txt_styles.dart';
 import 'package:quiz_app/widget/base_text.dart';
 import 'package:quiz_app/widget/quiz_card.dart';
 
@@ -160,16 +162,14 @@ class _HomeScreenState extends State<HomeScreen>
 }
 
 class _header extends StatelessWidget {
-  const _header({
-    super.key,
-  });
+  const _header();
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        SvgPicture.asset('res/icons/menu.svg'),
+        SvgPicture.asset(Images.iconMenu),
         Container(
           width: 32,
           height: 32,
@@ -184,9 +184,7 @@ class _header extends StatelessWidget {
 }
 
 class _searchTextField extends StatelessWidget {
-  const _searchTextField({
-    super.key,
-  });
+  const _searchTextField();
 
   @override
   Widget build(BuildContext context) {
@@ -197,7 +195,7 @@ class _searchTextField extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
-          hintText: 'Search',
+          hintText: S.current.search,
           border: InputBorder.none,
           hintStyle: TextStyle(
             color: AppColors.label,
@@ -206,7 +204,7 @@ class _searchTextField extends StatelessWidget {
           prefixIcon: IconButton(
             onPressed: () {},
             icon: SvgPicture.asset(
-              'res/icons/search.svg',
+              Images.iconSearch,
               color: Color(0xff3550DC),
               width: 20,
             ),
@@ -214,7 +212,7 @@ class _searchTextField extends StatelessWidget {
           suffixIcon: IconButton(
             onPressed: () {},
             icon: SvgPicture.asset(
-              'res/icons/filter.svg',
+              Images.iconFilter,
               color: Color(0xff3550DC),
               width: 20,
             ),

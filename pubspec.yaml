@@ -20,7 +20,7 @@ dependencies:
   cloud_firestore: ^4.8.0 # firebase
   firebase_database: ^10.2.2 #realtime firebase
   intl_utils: ^2.8.3 #intl
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -35,8 +35,7 @@ flutter:
 
   assets:
     - lib/json/
-    - res/
-    - res/icons/
-    - res/images/
+    - lib/res/icons/
+    - lib/res/images/
 flutter_intl:
   enabled: true

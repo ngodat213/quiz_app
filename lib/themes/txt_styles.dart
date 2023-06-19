@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quiz_app/themes/dimen.dart';
+import 'package:quiz_app/themes/dimens.dart';
 
 class TxtStyle {
   TxtStyle._();

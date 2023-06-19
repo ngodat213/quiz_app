@@ -5,8 +5,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/lesson.dart';
 import 'package:quiz_app/models/quiz.dart';
 import 'package:quiz_app/screens/quiz_screen/quiz_screen.dart';
-import 'package:quiz_app/themes/color.dart';
-import 'package:quiz_app/themes/txt_style.dart';
+import 'package:quiz_app/themes/colors.dart';
+import 'package:quiz_app/themes/images.dart';
+import 'package:quiz_app/themes/txt_styles.dart';
 import 'package:quiz_app/widget/base_text.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -116,19 +117,19 @@ class _DetailScreenState extends State<DetailScreen> {
                           text: '${widget.quiz.lessons!.length} Question',
                           title:
                               '${widget.quiz.getPoint} point for a correct answer',
-                          prefix: SvgPicture.asset('res/icons/note.svg'),
+                          prefix: SvgPicture.asset(Images.iconNote),
                         ),
                         SizedBox(height: 16),
                         _iconText(
                           text: '1 hour 0 min',
                           title: 'Total duration of the quiz',
-                          prefix: SvgPicture.asset('res/icons/clock.svg'),
+                          prefix: SvgPicture.asset(Images.iconClock),
                         ),
                         SizedBox(height: 16),
                         _iconText(
                           text: 'Win 10 star',
                           title: 'Answer all questions correctly',
-                          prefix: SvgPicture.asset('res/icons/note.svg'),
+                          prefix: SvgPicture.asset(Images.iconNote),
                         ),
                         SizedBox(height: 24),
                         Text(
@@ -168,7 +169,6 @@ class _btnLesson extends StatelessWidget {
     required this.result,
     required this.onTap,
     this.isSelected = false,
-    super.key,
   });
   final String text;
   final String result;
@@ -207,10 +207,7 @@ class _btnLesson extends StatelessWidget {
 }
 
 class _dotText extends StatelessWidget {
-  const _dotText(
-    this.text, {
-    super.key,
-  });
+  const _dotText(this.text);
   final String? text;
   @override
   Widget build(BuildContext context) {
@@ -239,7 +236,6 @@ class _dotText extends StatelessWidget {
 
 class _iconText extends StatelessWidget {
   const _iconText({
-    super.key,
     this.prefix,
     this.text,
     this.title,
@@ -285,7 +281,6 @@ class _iconText extends StatelessWidget {
 
 class _detailQuiz extends StatelessWidget {
   const _detailQuiz({
-    super.key,
     required this.quiz,
   });
 
@@ -317,7 +312,7 @@ class _detailQuiz extends StatelessWidget {
           bottom: 0,
           child: Row(
             children: [
-              SvgPicture.asset('res/icons/star.svg'),
+              SvgPicture.asset(Images.iconStar),
               SizedBox(width: 8),
               Text(
                 quiz.rating.toString(),
@@ -333,7 +328,6 @@ class _detailQuiz extends StatelessWidget {
 
 class _btnStartQuiz extends StatelessWidget {
   const _btnStartQuiz({
-    super.key,
     required this.lesson,
   });
   final Lesson lesson;
@@ -375,9 +369,7 @@ class _btnStartQuiz extends StatelessWidget {
 }
 
 class _header extends StatelessWidget {
-  const _header({
-    super.key,
-  });
+  const _header();
 
   @override
   Widget build(BuildContext context) {

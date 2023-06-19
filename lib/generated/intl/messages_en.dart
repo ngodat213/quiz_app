@@ -22,6 +22,26 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "app_name": MessageLookupByLibrary.simpleMessage("QuizApp")
+        "app_name": MessageLookupByLibrary.simpleMessage("QuizApp"),
+        "checkAnswer": MessageLookupByLibrary.simpleMessage("Check Answer"),
+        "computer": MessageLookupByLibrary.simpleMessage("Computer"),
+        "continueQuiz": MessageLookupByLibrary.simpleMessage("Continue Quiz"),
+        "correctAnswer": MessageLookupByLibrary.simpleMessage("Correct Answer"),
+        "goHome": MessageLookupByLibrary.simpleMessage("Go Home"),
+        "hello": MessageLookupByLibrary.simpleMessage("Hello"),
+        "hour": MessageLookupByLibrary.simpleMessage("hour"),
+        "incorrect": MessageLookupByLibrary.simpleMessage("Incorrect Answer"),
+        "lesson": MessageLookupByLibrary.simpleMessage("Lesson"),
+        "math": MessageLookupByLibrary.simpleMessage("Mathematic"),
+        "min": MessageLookupByLibrary.simpleMessage("min"),
+        "point": MessageLookupByLibrary.simpleMessage("Point"),
+        "popular": MessageLookupByLibrary.simpleMessage("Popular"),
+        "question": MessageLookupByLibrary.simpleMessage("Question"),
+        "quiz": MessageLookupByLibrary.simpleMessage("Quiz"),
+        "score": MessageLookupByLibrary.simpleMessage("Score"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "start": MessageLookupByLibrary.simpleMessage("Start Quiz"),
+        "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "totalQuestion": MessageLookupByLibrary.simpleMessage("Total Questions")
       };
 }

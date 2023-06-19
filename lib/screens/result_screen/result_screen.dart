@@ -3,8 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/lesson.dart';
 import 'package:quiz_app/screens/home_screen/home_screen.dart';
 import 'package:quiz_app/screens/check_answer/check_answer.dart';
-import 'package:quiz_app/themes/color.dart';
-import 'package:quiz_app/themes/txt_style.dart';
+import 'package:quiz_app/themes/colors.dart';
+import 'package:quiz_app/themes/images.dart';
+import 'package:quiz_app/themes/txt_styles.dart';
 import 'package:quiz_app/utils/base_navigation.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -186,7 +187,6 @@ class _customButton extends StatelessWidget {
   const _customButton(
     this.text, {
     this.onTap,
-    super.key,
   });
 
   final String text;
@@ -213,7 +213,6 @@ class _textResult extends StatelessWidget {
   const _textResult(
     this.text, {
     required this.result,
-    super.key,
   });
   final String text;
   final String result;
@@ -243,7 +242,6 @@ class _textResult extends StatelessWidget {
 
 class _header extends StatelessWidget {
   const _header({
-    super.key,
     required this.lesson,
   });
 
@@ -260,7 +258,7 @@ class _header extends StatelessWidget {
               onTap: () {
                 BaseNavigation.pop(context);
               },
-              child: SvgPicture.asset('res/icons/back_arrow.svg'),
+              child: SvgPicture.asset(Images.iconBackArrow),
             ),
             SizedBox(width: 16),
             Text(

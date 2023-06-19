@@ -1,6 +1,6 @@
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz_app/themes/txt_style.dart';
+import 'package:quiz_app/themes/txt_styles.dart';
 
 class TextIcon extends StatelessWidget {
   const TextIcon(
