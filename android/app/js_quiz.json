@@ -1292,7 +1292,7 @@
                                 "Củng cố và phát triển sức kháng chiến của toàn quân, toàn dân",
                                 "Cả 3 nhiệm vụ trên"
                             ],
-                            "question": "Hội nghị TƯ lần II của Đảng Lao động Việt Nam (10/1951) nêu chủ trương đẩy mạnh cuộc kháng chiến với nhiệm vụ:"
+                            "question": "Hội nghị TW lần II của Đảng Lao động Việt Nam (10/1951) nêu chủ trương đẩy mạnh cuộc kháng chiến với nhiệm vụ:"
                         },
                         {
                             "answer": 3,
@@ -1607,8 +1607,8 @@
                             "id": 42,
                             "options": [
                                 "Đã chín muồi",
-                                "Nhanh chóng chín muồi",
                                 "Chưa chín muồi",
+                                "Nhanh chóng chín muồi",
                                 "Cả 3 đều sai"
                             ],
                             "question": "Trong chỉ thị: \"Nhật, Pháp bắn nhau và hành động của chúng ta” (12/3/1945), ban Thường vụ T.Ư Đảng xác định thời cơ tổng khởi nghĩa: "
@@ -1772,8 +1772,8 @@
                             "id": 57,
                             "options": [
                                 "Kháng chiến chống Mỹ, giải phóng miền Nam",
-                                "Kháng chiến chống Mỹ, cứu nước trên cả nước",
                                 "Kháng chiến chống Mỹ ở miền Nam, bảo vệ miền Bắc XHCN",
+                                "Kháng chiến chống Mỹ, cứu nước trên cả nước",
                                 "Kháng chiến chống Mỹ, thống nhất đất nước"
                             ],
                             "question": "Hội nghị TW Đảng lần thứ XI (3/1965) và lần thứ XII (12/1965) đã đề ra đường lối:"
@@ -1953,6 +1953,1216 @@
                                 "8/1/1948"
                             ],
                             "question": "Cuộc Tổng tuyển cử toàn quốc đầu tiên của nước Việt Nam Dân chủ Cộng hoà được diễn ra vào thời gian nào?"
+                        }
+                    ],
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10
+                },
+                {
+                    "lessonId": 1,
+                    "lessonName": 4,
+                    "name": "Bài 4",
+                    "questions": [
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "Kinh tế tự nhiên tự cấp, tự túc",
+                                "Kinh tế tư bản chủ nghĩa",
+                                "Kinh tế trong thời kỳ quá độ lên chủ nghĩa xã hội",
+                                "Kinh tế xã hội chủ nghĩa"
+                            ],
+                            "question": "Theo tư duy mới, kinh tế thị trường chỉ đối lập với: "
+                        },
+                        {
+                            "answer": 2,
+                            "id": 2,
+                            "options": [
+                                "Đại hội Lần thứ IV",
+                                "Đại hội Lần thứ V",
+                                "Đại hội Lần thứ VI",
+                                "Đại hội lần thứ VII"
+                            ],
+                            "question": "Đại hội nào của Đảng nêu quan điểm: \"Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật. Quyết tâm đổi mới..."
+                        },
+                        {
+                            "answer": 2,
+                            "id": 3,
+                            "options": [
+                                "Vốn",
+                                "Khoa học, công nghệ",
+                                "Con người",
+                                "Cơ cấu kinh tế"
+                            ],
+                            "question": "Yếu tố nào là quyết định nhất của sự phát triển nhanh, bền vững trong sự nghiệp CNH, HĐH đất nước?"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 4,
+                            "options": [
+                                "Lấy nông nghiệp làm mặt trận hàng đầu",
+                                "Ra sức phát triển hàng tiêu dùng",
+                                "Phát triển công nghiệp nặng có mức độ, vừa sức",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Đại hội V của Đảng xác định nội dung chính của công nghiệp hóa trong chặng đường trước mắt là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 5,
+                            "options": [
+                                "Đại hội lần thứ VIII của Đảng",
+                                "Đại hội lần thứ IX của Đảng",
+                                "Đại hội lần thứ X của Đảng",
+                                "Đại hội lần thứ XI của Đảng"
+                            ],
+                            "question": "Đặc trưng về kinh tế trong mô hình chủ nghĩa xã hội mà nhân dân ta đang xây dựng: \"Có nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ phù hợp” là được xác định từ:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 6,
+                            "options": [
+                                "Đại hội III (tháng 9 năm 1960)",
+                                "Đại hội IV (tháng 12 năm 1976)",
+                                "Đại hội V (tháng 3 năm 1982)",
+                                "Đại hội VI (tháng 12 năm 1986)"
+                            ],
+                            "question": "\"Muốn cải tạo nền kinh tế lạc hậu của nước ta, không có con đường nào khác ngoài con đường công nghiệp hóa XHCN”, quan điểm đó được nêu lên từ Đại hội nào của Đảng?"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 7,
+                            "options": [
+                                "Đại hội VI",
+                                "Đại hội VII",
+                                "Đại hội VIII",
+                                "Đại hội IX"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Tiếp tục phát triển nền kinh tế nhiều thành phần, vận hành theo cơ chế thị trường có sự quản lý của nhà nước theo định hướng XHCN” là được xác định từ :"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 8,
+                            "options": [
+                                "Cơ bản trở thành nước côngnghiệp theo hướng hiện đại",
+                                "Trở thành nước công nghiệp phát triển trung bình",
+                                "Trở thành nước công nghiệp hiện đại",
+                                "Trở thành nước công nghiệp theo hướng hiện đại"
+                            ],
+                            "question": "Mục tiêu chiến lược phát triển đất nước ta đến năm 2020 là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 9,
+                            "options": [
+                                "1973",
+                                "1974",
+                                "1975",
+                                "1976"
+                            ],
+                            "question": "Trung Quốc dùng vũ lực chiếm quần đảo Hoàng Sa của Việt Nam vào năm nào?"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Nhà nước quản lý nền kinh tế chủ yếu bằng mệnh lệnh hành chính",
+                                "Các doanh nghiệp không cáo quyền tự chủ sản xuất kinh doanh",
+                                "Góc lao động, khoa học công nghệ được coi là hàng hóa",
+                                "Bộ máy quản lý cồng kềnh, nhiều nấc trung gian, kém hiệu quá"
+                            ],
+                            "question": "Chọn câu sai khi nói về cơ chế kế hoạch hóa tập trung thời kỳ trước Đổi mới:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Hồ Chí Minh",
+                                "Tôn Đức Thắng",
+                                "Nguyễn Văn Bằng",
+                                "Trường Chinh"
+                            ],
+                            "question": "Ai là người ra lệnh Tổng động viên toàn quốc để tấn công chiến đấu Trung Quốc?"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Con đường CNH ở nước ta cần và có thể rút ngắn thời gian so với các nước đi trước",
+                                "CNH ở nước ta là phải phát triển theo hướng nhanh, hiệu quả các ngành, các lĩnh vực có lợi thế",
+                                "CNH, HĐH phải đảm bảo xây dựng nề kinh tế độc lập tự chủ và hội nhập kinh tế quốc tế",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Đại hội IX (tháng 4/2001) và Đại hội X (tháng 6/2006) của Đảng đã bổ sung quan điểm mới về CNH là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 13,
+                            "options": [
+                                "Là cơ sở và lực lượng của công nghiệp hóa, hiện đại hóa",
+                                "Là nền tảng và động lực của công nhiệp hóa, hiện đại hóa",
+                                "Là then chốt và động lực của công nghiệp hóa, hiện đại hóa",
+                                "Cốt lõi và trọng tâm của công nghiệp hóa, hiện đại hóa"
+                            ],
+                            "question": "Đảng ta xác định vai trò của khoa học và công nghệ trong quá trình đẩy mạnh công nghiệp hóa, hiện đại hóa:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VIII",
+                                "Đại hội IX",
+                                "Đại hội X",
+                                "Đại hội XI"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Nền kinh tế thị trường định hướng XHCN ở nước ta có cơ cấu 4 thành phần kinh tế là: Kinh tế nhà nước, Kinh tế tập thể, Kinh tế tư nhân, Kinh tế có vốn đầu tư nước ngoài là được xác định từ:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Vai trò quan trọng của nông nghiệp đối với phát triển công nghiệp",
+                                "Tác động của quá trình CNH, HĐH đến nông nghiệp, nông dận, nông thôn",
+                                "Nông dân chiếm đa số dân cư và là nguồn lực lượng lao động to lớn cho phát triển công nghiệp",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Vấn đề nông nghiệp; nông dân; nông thôn được Đảng coi trọng hàng đầu trong quá trình đẩy mạnh CNH, HĐH là do:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Chủ quan, nóng vội, muốn bỏ qua những bước đi cần thiết",
+                                "Không kết hợp ngay từ đầu công nghiệp với nông nghiệp thành cơ cấu kinh tế thống nhất",
+                                "Chưa thực sự coi trọng nông nghiệp là mặt trận hàng đầu",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Công nghiệp hóa thời kỳ năm 1960-1985 ở nước ta đã mắc phải sai lầm:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Đại hội lần thứ VII",
+                                "Đại hội lần thứ VIII",
+                                "Đại hội lần thứ IX",
+                                "Đại hội lần thứ X"
+                            ],
+                            "question": "Mục tiêu: \"Sớm đưa nước ta ra khỏi tình trạng kém phát triển; tạo nền tảng để đến năm 2020 nước ta cơ bản trở thành nước công nghiệp theo hướng hiện đại” được xác định từ Đại hội nào của Đảng?"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Sở hữu công cộng; Sở hữ tư nhân; Sở hữu đầu tư nước ngoài",
+                                "Sở hữu toàn dân; Sở hữu tập thể; Sở hữu tư nhân",
+                                "Sở hữu nhà nước; Sở hữu tập thể; Sở hữu đầu tư nước ngoài",
+                                "Sở hữu toàn dân; Sở hữu cá thể; Sở hữu tư bản tư nhân"
+                            ],
+                            "question": "Đảng ta xác định, cơ cấu về chế độ sở hữu trong nền kinh tế thị trường định hướng XHCN ở nước ta là:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "Chuyển sang thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước với quan điểm chỉ đạo công nghiệp hóa gắn liền với hiện đại hóa",
+                                "Đẩy mạnh hóa công nghiệp, nông thôn",
+                                "Đẩy mạnh công nghiệp hóa kết hợp phát triển kinh tế tri thức",
+                                "Kết hợp công nghiệp hóa với phát triển kinh tế nông thôn"
+                            ],
+                            "question": "Đại hội đại biểu toàn quốc lần thứ VIII của Đảng (Tháng 6/1996) đề ra chủ trương về công nghiệp hóa"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "Vào năm 1995, lần thứ 28, thành viên thứ 7",
+                                "Vào năm 1995, lần thứ 27, thành viên thứ 8",
+                                "Vào năm 1996, lần thứ 28, thành viên thứ 7",
+                                "Vào năm 1996, lần thứ 27, thành viên thứ 8"
+                            ],
+                            "question": "Việt Nam gia nhập ASEAN tại Hội nghị Bộ trưởng Ngoại giao ASEAN vào năm nào? Lần thứ bao nhiêu? Thành viên thứ mấy?"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VII (tháng 6/1991)",
+                                "Đại hội VIII (tháng 6/1996)",
+                                "Đại hội IX (tháng 4/2001)",
+                                "Đại X (tháng 4/2006)"
+                            ],
+                            "question": "Đại hội nào của Đảng đưa ra nhận định: \"Nước ta đã ra khỏi khủng hoảng kinh tế - xã hội, nhiệm vụ chuẩn bị tiền đề cho công nghiệp hóa cơ bản đã hoàn thành, cho phép nước ta chuyển sang thời kỳ mới đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước”."
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Thị trường",
+                                "Sản xuất hàng hóa",
+                                "Kế hoạch hóa",
+                                "Phân phối theo lao động"
+                            ],
+                            "question": "Thời kỳ trước Đổi Mới, đặc trưng quan trọng nhất của nền kinh tế XHCN là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VII của Đảng",
+                                "Đại hội VIII của Đảng",
+                                "Đại hội IX của Đảng",
+                                "Đại hội X của Đảng"
+                            ],
+                            "question": "Mục tiêu phát triển kinh tế thị trường nhằm thực hiện: \"Dân giàu, nước mạnh, xã hội công bằng, dân chủ, văn minh” là được xác định tại:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Phát triển mạnh các ngành và sản phẩm có giá trị gia tăng cao dựa nhiều vào tri thức",
+                                "Coi trọng cả số lượng và chất lượng trong tăng trưởng kinh tế, đảm bảo tăng trưởng nhanh, bền vững",
+                                "Xây dựng cơ cấu kinh tế hiện đại và hợp lý; tăng cao năng suất lao động xã hội",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Nội dung chủ yếu của CNH, HĐH gắn với phát triển kinh tế tri thức là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Duy trì tăng trưởng kinh tế theo chiều rộng, kém hiệu quả",
+                                "Thực hiện công nghiệp hóa theo hưởng ưu tiên phát triển công nghiệp nặng",
+                                "Quá chú trọng biện pháp hành chính trong giải quyết các quan hệ kinh tế",
+                                "Kích thích tính năng động, sáng tạo của các doanh nghiệp và người lao động"
+                            ],
+                            "question": "Chọn câu sai khi nói về hệ quả của cơ chế kế hoạch hóa tập trung bao cấp:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Đại hội thứ II",
+                                "Đại hội thứ III",
+                                "Đại hội thứ IV",
+                                "Đại hội thứ V"
+                            ],
+                            "question": "Đường lối công nghiệp hóa đất nước được hình thành từ Đại hội nào của Đảng: "
+                        },
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "28/7/1995",
+                                "11/08/1995",
+                                "18/7/1995",
+                                "17/1/1995"
+                            ],
+                            "question": "Việt Nam gia nhập Hiệp hội các quốc gia Đông Nam Á ASEAN vào ngày tháng năm nào?"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Đại hội Lần thứ IV",
+                                "Đại hội Lần thứ V",
+                                "Đại hội Lần thứ VI",
+                                "Đại hội Lần thứ VII"
+                            ],
+                            "question": "Đại hội nào của Đảng đưa ra đường lối phát triển 3 chương trình kinh tế trọng điểm: lương thực thực phẩm; hàng tiêu dùng; hàng xuất khẩu?"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Phân phối theo giá trị sức lao động là chủ yếu",
+                                "Phân phối theo lao động và kết quả kinh doanh là chủ yếu",
+                                "Phân phối qua các quỹ phúc lợi xã hội, tập thể là chủ yếu",
+                                "Phân phối theo vốn, tài sản, cổ D. phần là chủ yếu"
+                            ],
+                            "question": "Nền kinh tế thị trường định hướng xã hội chủ nghĩa thực hiện nhiều hình thức phân phối thu nhập, trong đó:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Đại hội II",
+                                "Đại hội III",
+                                "Đại hội IV",
+                                "Đại hội VI"
+                            ],
+                            "question": "Quan điểm: \"Mục tiêu cơ bản của công nghiệp hóa XHCN là xây dựng một nền kinh tế XHCN cân đối và hiện đại” là do đại hội nào của Đảng xác định:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 31,
+                            "options": [
+                                "Làm cho các thể chế phù hợp với những nguyên tắc cơ bản của kinh tế thị trường",
+                                "Làm cho các thể chế phù hợp các yêu cầu cơ bản của kinh tế thị trường",
+                                "Làm cho các chính sách phù hợp cới các quy luật cơ bản của kinh tế thị trường",
+                                "Làm cho các quan điểm phù hợp với những nguyên tắc cơ bản của kinh tế thị trường"
+                            ],
+                            "question": "Mục tiêu cơ bản của hoàn thiện thể chế kinh tế thị trường định hướng XHCN ở nước ta là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Kinh tế thị trường không phải là riêng có của chủ nghĩa tư bản",
+                                "Kinh tế thị trường còn tồn tại khách quan suốt cả thời kỳ quá độ lên CNXH",
+                                "Có thể và cần thiết sử dụng kinh tế thị trường để xây dựng chủ nghĩa xã hội",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Tư duy của Đảng về kinh tế thị trường theo quan điểm Đổi mới là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Lực lượng sản xuất hiện đại và chế động công hữu về tư liệu sản xuất chủ yếu",
+                                "Lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ phù hợp",
+                                "Lực lượng sản xuất hiện đại và quan hệ sản xuất xã hội chủ nghĩa",
+                                "Lực lượng sản xuất tiên tiến và quan hệ sản xuất hiện đại"
+                            ],
+                            "question": "Đại hội XI của Đảng (tháng 1/2011) xác định đặc trưng về kinh tế trong mô hình CNXH mà nhân dân ta đang xây dựng: \"Có nền kinh tế phát triển cao dựa trên"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VI ",
+                                "Đại hội VII",
+                                "Đại hội VIII",
+                                "Đại hội IX"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Nền kinh tế thị trường định hướng XHCN là mô hình kinh tế tổng quát của nước ta trong thời kỳ quá độ lên CNXH” là được xác định từ:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Đạt khoảng 2.000 USD",
+                                "Đạt khoảng 2.500 USD",
+                                "Đạt khoảng 3.000 USD",
+                                "Đạt khoảng 3.500 USD"
+                            ],
+                            "question": "Mục tiêu phát triển kinh tế của Việt Nam về GDP/người (theo giá thực tế) đến năm 2020:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VIII",
+                                "Đại hội IX",
+                                "Đại hội X",
+                                "Đại hội XI"
+                            ],
+                            "question": "Đại hội nào của Đảng xác định mô hình CNXH mà nhân ta xây dựng gồm 8 đặc trưng, trong đó đặc trưng đầu tiên là \"Dân giàu, nước mạnh, dân chủ, công bằng, văn minh”:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Biển nước thành một nước công nghiệp phát triển",
+                                "Mức sống về vật chất và tinh thần của nhân dân cao",
+                                "Quốc phòng, an ninh vững chắc",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Mục tiêu cơ bản của CNH, HĐH ở nước ta là:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "1990",
+                                "1993",
+                                "1995",
+                                "1997"
+                            ],
+                            "question": "Việt Nam đã bình thường hoá quan hệ ngoại giao với Mỹ vào năm nào? "
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Thủ tiêu động lực cạnh tranh phát triển kinh tế",
+                                "Triệt tiêu năng lực chủ động, sáng tạo của các doanh nghiệp",
+                                "Không kích thích người lao động nâng cao trình độ, năng lực sản xuất",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Cơ chế kế hoạch hóa tập trung, bao cấp có những hạn chế:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Đại hội lần thứ VII (tháng 6/1991)",
+                                "Đại hội lần thứ VIII (tháng 6/1996)",
+                                "Đại hội lần thứ IX (tháng 4/2001)",
+                                "Đại hội lần thứ X (tháng 4/2006)"
+                            ],
+                            "question": "Quan điểm \"CNH, HĐH gắn với phát triển kinh tế tri thức” được Đảng đề ra từ:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Bao cấp qua giá",
+                                "Bao cấp qua chế độ tem, phiếu",
+                                "Bao cấp theo chế độ cấp phát vốn",
+                                "Bao gồm cả 3 nội dung trên"
+                            ],
+                            "question": "Chế độ bao cấp trong nền kinh tế trước Đổi mới biểu hiện:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Đại hội IV",
+                                "Đại hội V",
+                                "Đại hội VI",
+                                "Đại hội VII"
+                            ],
+                            "question": "Đại hội nào của Đảng đưa ra nhận định sau đây: \"Xu thế mở rộng phân công, hợp tác giữa các nước, kể cả các nước có chế độ kinh tế, xã hội khác nhau cũng là những điều kiện quan trọng đối với việc xây dựng CNXH ở nước ta”:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 43,
+                            "options": [
+                                "Kinh tế thị trường xã hội chủ nghĩa",
+                                "Kinh tế thị trường định hướng nghĩa xã hội chủ nghĩa",
+                                "Kinh tế thị trường xã hội",
+                                "Kinh tế thị trường tự do"
+                            ],
+                            "question": "Mô hình kinh tế ở Việt Nam được xác định từ thời kỳ Đổi mới là"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Mô hình khép kín, hướng nội, thiên về công nghiệp nặng",
+                                "Chủ yếu dựa vào lợi thế về lao động, tài nguyên, đất đai và nguồn viện trợ",
+                                "Nóng vội, giản đơn, chủ quan duy ý chí",
+                                "Cả 3 nội dung nêu trên"
+                            ],
+                            "question": "Những hạn chế, sai lầm của đường lối công nghiệp hóa thời ký trước đổi mới:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Các chủ thể kinh tế hoàn toàn tự chủ trong hoạt động sản xuất kinh doanh",
+                                "Giá cả được hình thành trên thị trường, do cạnh tranh và cung - cầu điều tiết",
+                                "Nền kinh tế vận hành theo các quy luật kinh tế thị trường có sự quản lý của nhà nước",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Đặc trương cơ bản của kinh tế thị trường là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Cơ sở vật chất - kỹ thuật hiện đại; cơ cấu kinh tế hợp lý; quan hệ sản xuất tiến bộ phù hợp với trình độ phát triển của lực lưỡng sản xuất",
+                                "Mức sống vật chất và tinh thần của nhân dân cao; quốc phòng, an ninh vững chắc",
+                                "Dân giàu, nước mạnh, xã hội công bằng, văn minh",
+                                "Cả 3 nội dung nêu trên"
+                            ],
+                            "question": "Đảng ta xác định mục tiêu cơ bản của CNH, HĐH là biển nước ta thành một nước công nghiệp có:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Lấy công nghiệp làm mặt trận hàng đầu",
+                                "Lấy nông nghiệp làm mặt trận hàng đầu",
+                                "Lấy dịch vụ làm mặt trận hàng đầu",
+                                "Lấy sản xuất hàng tiêu dùng làm mặt trận hàng đầu"
+                            ],
+                            "question": "Đại hội đại biểu Toàn quốc lần thứ V của Đảng (tháng 3/1982) với chủ trương:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Tháng 9/1954; Hàn gắn vết thương chiến tranh, khôi phục kinh tế",
+                                "Tháng 9/1960; Công nghiệp hóa xã hội chủ nghĩa",
+                                "Tháng 9/1965; Tăng gia sản xuất, thực hành tiết kiệm",
+                                "Tháng 9/1975; Đẩy mạnh sản xuất nông nghiệp, coi là mặt trận hàng đầu"
+                            ],
+                            "question": "Đại hội lần thứ III của Đảng diễn ra khi nào và xác định con đường phát triển kinh tế tất yếu là gì?"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "10/1991",
+                                "11/1991",
+                                "10/1992",
+                                "11/1992"
+                            ],
+                            "question": "Việt Nam đã bình thường hoá quan hệ với Trung Quốc vào thời điểm nào?"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "1977",
+                                "1978",
+                                "1979",
+                                "1980"
+                            ],
+                            "question": "Quân tình nguyện Việt Nam phối hợp chặc chẽ cùng quân dân Campuchia giải phóng Phnôm Pênh, xoá bỏ tập đoàn diệt chủng Pôn Pốt vào năm nào?"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Hội nghị Trung ương VII, khóa V",
+                                "Đại hội Đại biểu toàn quốc lần thứ VI",
+                                "Đại hội Đại biểu toàn quốc lần thứ VII",
+                                "Hội nghị Trung ương VII, khóa VII"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Công nghiệp hóa gắn với hiện đại hóa” là được xác định từ:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Quan hệ Việt Nam – Liên Xô",
+                                "Quan hệ Việt Nam – Trung Quốc",
+                                "Quan hệ Việt Nam – Lào – Campuchia",
+                                "Quan hệ Việt Nam – ASEAN"
+                            ],
+                            "question": "Thời kỳ trước Đổi mới, trong quan hệ đối ngoại, Đảng ta xác định mối quan hệ đặc biệt có ý nghĩa sống còn đối với vận mệnh của dẫn tộc là:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VII",
+                                "Đại hội VIII",
+                                "Đại hội IX",
+                                "Đại hội X"
+                            ],
+                            "question": "Quan điểm: \"Kinh tế thị trường định hướng XHCN là một kiểu tổ chức kinh tế, vừa tuân theo quy luật của kinh tế thị trường, vừa dựa trên cơ sở và chịu sự dẫn dắt, chi phối bởi các nguyên tắc và bản chất của CNXH” là do Đại hội nào của Đảng xác định?"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Công nghiệp hóa gắn với hiện đại hóa và gắn với phát triển kinh tế tri thức",
+                                "Công nhiệp hóa, hiện đại hóa gắn với phát triển kinh tế thị trường định hướng XHCN và hội nhập kinh tế quốc tế",
+                                "Lấy phát triển nguồn lực con người là yếu tố cơ bản cho sự phát triển nhanh và bền vững",
+                                "Bao gồm cả 3 quan điểm trên"
+                            ],
+                            "question": "Quan điểm cơ bản của Đảng về công nghiệp hóa, hiện đại hóa thời kỳ đổi mới:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Ưu tiên phát triển công nghiệp nặng một cách hợp lý",
+                                "Kết hợp chặt chẽ phát triển công nghiệp với phát triển nông nghiệp",
+                                "Ra sức phát triển công nghiệp nhẹ song song với việc ưu tiên phát triển công nghiệp nặng",
+                                "Bao gồm cả 3 phương hướng kể trên"
+                            ],
+                            "question": "Hội nghị TW Đảng lần VII (Khóa III) nêu phương hướng chỉ đạo xây dựng và phát triển công nghiệp là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Tháng 5/1959",
+                                "Tháng 1/1960",
+                                "Tháng 7/1960",
+                                "Tháng 9/1960"
+                            ],
+                            "question": "Đại hội III đã hoàn chỉnh đường lối chiến lược chung của Cách mạng Việt Nam trong giai đoạn mới diễn ra: "
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Thực hiện khoán sản phẩm trong nông nghiệp theo chỉ thị 100-CT/TW của Ban Bí thư TW Đảng ",
+                                "Cải cách chế độ giá - lương - tiền theo nghị quyết TW 8/Khóa IV của BCH TW",
+                                "Thực hiện Nghị định số 25 và Nghị định số 26 của Chính phủ về quyền chủ động sản xuất kinh doanh của các doanh nghiệp",
+                                "Cả 3 nội dung trên"
+                            ],
+                            "question": "Trước khi có đường lối Đổi mới (Đại hội VI năm 1986), Đảng ta đã có những bước cải tiến theo hướng kinh tế thị trường như:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 1,
+                            "options": [
+                                "Nhà nước quản lý nền kinh tế chủ yếu bằng mệnh lệnh hành chính",
+                                "Quan hệ hàng hóa tiền tệ bị coi nhẹ, quan hệ hiện vật là chủ yếu",
+                                "Bộ máy quản lý cồng kềnh, quan liêu, kém hiệu quả",
+                                "Cả 3 đặc trưng trên"
+                            ],
+                            "question": "Đặc trưng của cơ chế kế hoạch hóa tập trung thời kỳ trước Đổi mới là:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "Quyết định nhất đối với sự phát triển toàn bộ cách mạng Việt Nam và sự nghiệp thống nhất nước nhà",
+                                "Trực tiếp quyết định thắng lợi của sự nghiệp giải phóng miền Nam",
+                                "Trực tiếp quyết định thành công của xây dựng CNXH ở miền Bắc",
+                                "Cả 3 câu trên đúng"
+                            ],
+                            "question": "Đại hội III của Đảng đã xác định vai trò của cách mạng XHCN ở miền Bắc là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "Kinh tế nhà nước; Kinh tế Hợp tác xã; Kinh tế tư nhân; Kinh tế Tư bản nhà nước; Kinh tế đầu tư nước ngoài",
+                                "Kinh tế nhà nước; Kinh tế tập thể; Kinh tế tư nhân; Kinh tế có vốn đầu tư nước ngoài",
+                                "Kinh tế nhà nước; Kinh tế cá thể và tiểu chủ; Kinh tế tư nhân; Kinh tế có vốn đầu tư nước ngoài",
+                                "Kinh tế quốc doanh; Kinh tế tập thể; Kinh tế cá thể và tiểu chủ; Kinh tế tư nhân; Kinh tế tư bản nhà nước; Kinh tế đầu tư nước ngoài"
+                            ],
+                            "question": "Đại hội XI của Đảng (tháng 1/2011) xác định nền kinh tế thị trường định hướng XHCN ở nước ta có cơ cấu các thành phần kinh tế là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 1,
+                            "options": [
+                                "1993",
+                                "1994",
+                                "1995",
+                                "1996"
+                            ],
+                            "question": "Mỹ đã bỏ cấm vận Việt Nam vào năm nào?"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 1,
+                            "options": [
+                                "Đại hội VI (tháng 12/1986)",
+                                "Đại hội VII (tháng 6/1991)",
+                                "Đại hội VIII (tháng 6/1996)",
+                                "Đại hội IX (tháng 4/2001)"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Sản xuất hàng hóa không đối lập với CNXH, nó tồn tại khách quan và cần thiết để xây dựng CNXH” là có từ: "
+                        },
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "Ưu tiên phát triển công nghiệp nặng một cách hợp lý trên cơ sở phát triển nông nghiệp và công nghiệp nhẹ",
+                                "Ưu tiên phát triển công nghiệp nặng một cách hợp lý đồng thời phát triển nông nghiệp và công nghiệp nhẹ",
+                                "Ưu tiên phát triển công nghiệp nặng, song song phát triển công nghiệp nhẹ và nông nghiệp",
+                                "Ưu tiên phát triển công nghiệp nặng, đồng thời chú trọng phát triển nông nghiệp"
+                            ],
+                            "question": "Đại hội đại biểu Toàn quốc lần thứ IV của Đảng xác định nội dung đường lối Công nghiệp hóa XHCN là:"
+                        }
+                    ],
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10
+                },
+                {
+                    "lessonId": 1,
+                    "lessonName": 5,
+                    "name": "Bài 5",
+                    "questions": [
+                        {
+                            "answer": 0,
+                            "id": 1,
+                            "options": [
+                                "Bắt đầu từ đổi mới kinh tế, đồng thời từng bước đổi mới hệ thống chính trị",
+                                "Bắt đầu từ đổi mới hệ thống chính trị, từng bước đổi mới kinh tế",
+                                "Cùng tiến hành đồng bộ đổi mới chính trị và đổi mới kinh tế",
+                                "Cả 3 câu trên đều sai"
+                            ],
+                            "question": "Quan điểm của Đảng về tiến hành sự nghiệp Đổi mới: \"Đồi mới là một quá trình"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 2,
+                            "options": [
+                                "Cách mạng tư tưởng, văn hóa là một trong 3 cuộc cách mạng",
+                                "Xây dựng nền văn hóa mới, con người mới",
+                                "Xóa nạn mù chữ, xóa thói hư",
+                                "Cả 3 nội dung trên tật xấu do xã hội cũ để lại"
+                            ],
+                            "question": "Đại hội lần thứ III của Đảng xác định nhiệm vụ về văn hóa:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 3,
+                            "options": [
+                                "Xây dựng và hoàn thiện hệ thống luật pháp, hoạt động của Quốc hội và hội đồng nhân dân",
+                                "Tiếp tục đổi mới cơ cấu bộ máy nhà nước, cải cách thủ tục hành chính và công tác cán bộ, công chức",
+                                "Xây dựng bộ máy và hoạt động của cơ quan tư pháp, trong sạch, hiệu lực, hiệu quả",
+                                "Cả 3 biện pháp trên"
+                            ],
+                            "question": "Biện pháp xây dựng và hoàn thiện Nhà nước ta hiện nay:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 4,
+                            "options": [
+                                "Thực hiện nhất quán đường lối đối ngoại độc lập tự chủ, hòa bình, hợp tác và phát triển",
+                                "Chính sách đối ngoại rộng mở, đa phương hóa, đa dạng hóa các quan hệ quốc tế",
+                                "Chủ động và tích cực hội nhập kinh tế quốc tế",
+                                "Bao gồm cả 3 quan điểm kể trên"
+                            ],
+                            "question": "Đại hội X của Đảng (tháng 4/ 2006) nêu quan điểm về đối ngoại:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 5,
+                            "options": [
+                                "Có quan hệ bình đẳng hợp tác và đấu tranh với tất cả các nước trên thế giới",
+                                "Có quan hệ hữu nghị và hợp tác với nhân dân các nước trong khu vực và trên thế giới",
+                                "Có quan hệ hữu nghị và hợp tác với các nước trên thế giới",
+                                "Có quan hệ kinh tế và giao lưu văn hóa rộng mở với các dân tộc trên thế giới"
+                            ],
+                            "question": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH (bổ sung phát triển năm 2011) xác định mô hình CNXH mà nhân dân ta xây dựng có 8 đặc trưng, trong đó đặc trưng về quan hệ đối ngoại là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 6,
+                            "options": [
+                                "Hệ thống chính trị dân chủ nhân dân",
+                                "Hệ thống dân chủ nhân dân làm nhiệm vụ lịch sử của chuyên chính vô sản",
+                                "Hệ thống Chuyên chính vô sản, mang đặc điểm Việt Nam",
+                                "Bao gồm cả 3 hệ thống kể trên"
+                            ],
+                            "question": "Hệ thống chính trị ở nước ta thời kỳ trước Đổi mới:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 7,
+                            "options": [
+                                "Khuyến khích mọi người dân làm giàu theo pháp luật, thực hiện có hiệu quả mục tiêu xóa đói, giảm nghèo",
+                                "Bảo đảm cung ứng dịch vụ công thiết yếu, bình đẳng cho mọi người dân, tạo việc làm và thu nhập",
+                                "Phát triển hệ thống y tế công bằng và hiệu quả",
+                                "Không có đáp án nào sai"
+                            ],
+                            "question": "Chọn đáp án sai nói về chủ trương của Đảng trong giải quyết các vấn đề xã hội:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 8,
+                            "options": [
+                                "Khả năng giao lưu văn hóa",
+                                "Môi trường quan hệ chính trị",
+                                "Môi trường hòa bình, ổn định",
+                                "Khả năng chủ động hội nhập"
+                            ],
+                            "question": "Chọn đáp án đúng, điền vào chỗ trống, trong câu nói về quan điểm đối ngoại của Đảng ta hiện nay: \"Giữ vững _____, tạo điều kiện quốc tế thuận lợi cho công cuộc đổi mới, phát triển kinh tế, xã hội”:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 9,
+                            "options": [
+                                "Nhà nước quản lý xã hội bằng pháp luật nhằm bảo vệ quyền lợi của nhân dân",
+                                "Đảng lãnh đạo, Nhà nước quản lý, Nhân dân làm chủ",
+                                "Nhân dân phát huy quyền làm O chủ thông qua mặt trận tổ quốc D. và các đoàn thể",
+                                "Đảng và Nhà nước lãnh đạo nhân dân thông qua Mặt trận tổ quốc"
+                            ],
+                            "question": "Cơ chế vận hành của hệ thống chính trị ở nước ta là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 10,
+                            "options": [
+                                "Giải quyết các vấn đề xã hội phải kết hợp các mục tiêu kinh tế với mục tiêu xã hội",
+                                "Giải quyết các vấn đề xã hội phải dựa trên quan hệ hợp tác và sự giúp đỡ quốc tế",
+                                "Giải quyết các vấn đề xã hội phải gắn kết tăng trưởng kinh tế với công bằng, tiến bộ xã hội",
+                                "Giải quyết các vấn đề xã hội phải xây dựng và thực hiện các chính sách xã hội trên cơ sở phát triển kinh tế"
+                            ],
+                            "question": "Chọn đáp án sai, nói về quan điểm của Đảng trong giải quyết các vấn đề xã hội:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 11,
+                            "options": [
+                                "Tập hợp, vận động, xây dựng khối đoàn kết rộng rãi các tầng lớp nhân dân",
+                                "Đại diện cho lợi ích hợp pháp của nhân dân",
+                                "Quản lý nhà nước bằng luật pháp, chính sách",
+                                "Đề xuất, góp ý, phản biện các chủ trương, chính sách"
+                            ],
+                            "question": "Tìm câu sai nói về vai trò của Mặt trận tổ quốc và các tổ chức chính trị - xã hội:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 12,
+                            "options": [
+                                "Duy trì quá lâu cơ chế quản lý kinh tế tập trung, hành chính, bao cấp",
+                                "Hệ thống chuyên chính vô sản có biểu hiện bảo thủ, trì trệ, chậm đổi mới",
+                                "Bệnh giáo điều, chủ quan, duy ý chí trong sự lãnh đạo của Đảng",
+                                "Cả 3 nguyên nhân trên"
+                            ],
+                            "question": "Nguyên nhân những hạn chế của hệ thống chuyên chính vô sản ở nước ta thời kỳ trước Đổi mới (1975-1986):"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 13,
+                            "options": [
+                                "Dân tộc; Nhân văn; Tiên tiến",
+                                "Dân tộc; Đại chúng; Khoa học",
+                                "Dân chủ; Tiến bộ; Hiện đại",
+                                "Truyền thống; Hiện đại; Khoa học"
+                            ],
+                            "question": "Đề cương văn hóa Việt Nam (năm 1943) của Đảng xác định nguyên tắc xây dựng nền văn hóa mới là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 14,
+                            "options": [
+                                "Đại hội VII",
+                                "Đại hội VIII",
+                                "Đại hội IX",
+                                "Đại hội X"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Hoạch định các chính sách xã hội, chủ trương giải quyết các vấn đề xã hội theo tinh thần xã hội hóa..”, được đưa ra từ đại hội nào:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 15,
+                            "options": [
+                                "Giáo dục chủ nghĩa Mác - Lênin; xây dựng tư tưởng cách mạng",
+                                "Chống nạn mù chữ; giáo dục lại tinh thần nhân dân",
+                                "Tăng cường công tác văn hóa, văn nghệ; nâng cao đời sống tinh thần xã hội",
+                                "Xây dựng đời sống văn hóa mới; khắc phục tệ nạn xã hội"
+                                
+                            ],
+                            "question": "Sau khi giành được chính quyền (tháng 9/1945), chính phủ xác định các nhiệm vụ trước mắt, trong đó về văn hóa có 2 nhiệm vụ là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 16,
+                            "options": [
+                                "Đảng Cộng sản Việt Nam; Chính phủ nước Cộng hòa XHCN Việt Nam; Quốc hội nước Việt Nam",
+                                "Đảng Cộng sản Việt Nam; Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam; Mặt trận Tổ quốc và các đoàn thể chính trị, xã hội",
+                                "Giai cấp Công nhân Việt Nam; Giai cấp Nông dân Việt Nam; Đội ngũ Trí thức Việt Nam",
+                                "Cả 3 câu trên đều sai"
+                            ],
+                            "question": "Cấu trúc của hệ thống chính trị nước ta hiện nay bao gồm:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 17,
+                            "options": [
+                                "Các nước có chế độ xã hội, chính trị khác nhau hình thành những trung tâm đối đầu",
+                                "Các nước với chế độ xã hội và trình độ phát triển khác nhau cùng tồn tại, vừa hợp tác vừa đấu tranh, cạnh tranh gay gắt vì lợi ích quốc gia, dân tộc",
+                                "Các nước với chế độ xã hội chính trị và trình độ phát triển khác nhau cùng tồn tại hòa binh, hợp tác ổn định và phát triển",
+                                "Cả 3 câu trên đều sai"
+                            ],
+                            "question": "Đảng ta nhận định đặc điểm nổi bật trong giai đoạn hiện nay của thời đại là:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 18,
+                            "options": [
+                                "Đại hội IV (tháng 12/1976)",
+                                "Đại hội V (tháng 3/1982)",
+                                "Đại hội VI (tháng 12/ 1986)",
+                                "Đại hội VII ( tháng 6/ 1991)"
+                            ],
+                            "question": "Đại hội nào của Đảng đã xác định nhiệm vụ đối ngoại: \"Ra sức tranh thủ những điều kiện quốc tế thuận lợi để nhanh chóng hàn gắn vết thương chiến tranh, khôi phục và phát triển kinh tế,... xây dựng cơ sở vật chất kỹ thuật của CNXH ở nước ta”:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 19,
+                            "options": [
+                                "Kết hợp chặt chẽ, hợp lý phát triển kinh tế với phát triển văn hóa, xã hội, thực hiện tiến bộ và công bằng xã hội ngay trong từng bước và từng chính sách",
+                                "Khuyến khích làm giàu hợp pháp đi đôi với xóa nghèo bền vững",
+                                "Hoàn thiện hệ thống an sinh xã hội",
+                                "Không có đáp án nào sai"
+                            ],
+                            "question": "Chọn đáp án sai, nói về quan điểm của Đảng về chính sách xã hội (theo Đại hội XI):"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 20,
+                            "options": [
+                                "Đại hội VIII (tháng/1996)",
+                                "Đại hội IX (tháng 4/2001)",
+                                "Đại hội X (tháng 4/2006)",
+                                "Đại hội XI (tháng 1/2001)"
+                            ],
+                            "question": "Đại hội nào của Đảng xác định: \"Đảng cộng sản Việt Nam là đội tiên phong của giai cấp công nhân, đồng thời, là đội tiên phong của nhân dân lao động và của dân tộc Việt Nam”:"
+                        },
+                        
+                        {
+                            "answer": 0,
+                            "id": 21,
+                            "options": [
+                                "Nền văn hóa có nội dung XHCN và tính chất dân tộc, có tính Đảng và tính nhân dân.",
+                                "Nền văn hóa có nội dung dân tộc và tính chất tiên tiến, đại chúng và truyền thống.",
+                                "Nền văn hóa có nội dung tiên tiến và tính Đảng, tính giai cấp D. và tính đại chúng.",
+                                "Nền văn hóa có nội dung XHCN và tính chất dân chủ, có tính nhân văn và tính Đảng"
+                            ],
+                            "question": "Đường lối phát triển văn hóa của Đảng xác định nền văn hóa mới là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 22,
+                            "options": [
+                                "Sản phẩm của chế độ phong kiến",
+                                "Sản phẩm của chế độ tư bản chủ nghĩa",
+                                "Sản phẩm của tiến bộ, văn minh nhân loại",
+                                "Sản phẩm của chế độ XHCN"
+                            ],
+                            "question": "Nhà nước pháp quyền là:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 23,
+                            "options": [
+                                "Chế độ \"Tam quyền phân lập”",
+                                "Quản lý tập trung, thống nhất của bộ máy nhà nước",
+                                "Quyền lực nhà nước là thống nhất, thuộc về nhân dân, có sự phân công và phối hợp thực hiện 3 quyền",
+                                "Cả 3 nội dung trên đều đúng"
+                            ],
+                            "question": "Nhà nước pháp quyền XHCN Việt Nam thực hiện:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 24,
+                            "options": [
+                                "Là một bộ phận của hệ thống chính trị, lãnh đạo hệ thống chính trị",
+                                "Là bộ phận nằm ngoài hệ thống chính trị, lãnh đạo hệ thống chính trị",
+                                "Là bộ phấn ở trên hệ thống chính trị, điều khiển, giám sát hệ thống chính trị",
+                                "Là bộ phận gắn liền với hệ thống chính trị, quản lý, chỉ đạo hệ thống chính trị"
+                            ],
+                            "question": "Vị trí, vai trò của Đảng trong hệ thống chính trị ở nước ta:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 25,
+                            "options": [
+                                "Xây dựng nhà nước hoạt động có hiệu lực, hiệu quả",
+                                "Xây dựng Đảng trong sạch, vững mạnh, nâng cao năng lực lãnh đạo và sức chiến đấu của Đáng",
+                                "Xây dựng và hoàn thiện nền dân chủ XHCN, bảo đảm quyền lực thuộc về nhân dân",
+                                "Xây dựng mặt trận tổ quốc và các đoàn thể nhân dân thực hiện tốt chức năng của mình"
+                            ],
+                            "question": "Mục tiêu của xây dựng hệ thống chính trị thời kỳ Đổi mới là:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 26,
+                            "options": [
+                                "Đại hội VI",
+                                "Đại hội VII",
+                                "Đại hội VIII",
+                                "Đại hội IX"
+                            ],
+                            "question": "Đại hội nào của Đảng đề ra chủ trương về đối ngoại: \"Hợp tác bình đẳng và cùng có lợi với tất cả các nước, không phân biệt chế độ chính trị - xã hội trên cơ sở các nguyên tắc cùng tôn trọng hòa bình”?"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 27,
+                            "options": [
+                                "Tiến hành cải cách giáo dục",
+                                "Phát triển khoa học, nghệ thuật",
+                                "Giáo dục tinh thần làm chủ tập thể",
+                                "Cả 3 câu trên đều đúng"
+                            ],
+                            "question": "Đại hội IV và Đại hội V của Đảng xác định nhiệm vụ của Văn hóa:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 28,
+                            "options": [
+                                "Ngày 20/12/1945",
+                                "Ngày 6/1/1946",
+                                "Ngày 2/3/1946",
+                                "Ngày 1/5/1946"
+                            ],
+                            "question": "Cuộc tổng tuyển cử đầu tiên bầu Quốc hội nước Việt Nam Dân chủ Cộng hòa diễn ra:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 29,
+                            "options": [
+                                "Đảng lãnh đạo bằng cương lĩnh, chiến lược",
+                                "Đảng lãnh đạo bằng đề ra luật pháp, mệnh lệnh, chỉ thị",
+                                "Đảng lãnh bằng quan điểm, chủ trương định hướng xây dựng chính sách",
+                                "Đảng lãnh đạo bằng công tác tổ chức và nhân sự"
+                            ],
+                            "question": "Chọn đáp án sai khi nói về phương thức lãnh đạo của Đảng:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 30,
+                            "options": [
+                                "Đại hội VI (tháng 12/1986)",
+                                "Đại hội VII (tháng 6/1991)",
+                                "Đại hội VIII (tháng 6/1996)",
+                                "Đại hội IX (tháng 4/2001)"
+                            ],
+                            "question": "Quan điểm của Đảng: \"Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc” được hình thành từ Đại hội nào?"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 31,
+                            "options": [
+                                "1976",
+                                "1980",
+                                "1985",
+                                "1990"
+                            ],
+                            "question": "Quốc hội đã quyết định đặt tên nước ta là nước Cộng hoà xã hội chủ nghĩa Việt Nam vào năm: "
+                        },
+                        {
+                            "answer": 0,
+                            "id": 32,
+                            "options": [
+                                "Phan Chu Trinh",
+                                "Phan Bội Châu",
+                                "Hoàng Hoa Thám",
+                                "Nguyễn An Ninh"
+                            ],
+                            "question": "Người chủ trương dùng cải cách văn hóa buộc pháp trả lại độc lập cho Việt Nam là: "
+                        },
+                        {
+                            "answer": 3,
+                            "id": 33,
+                            "options": [
+                                "Đại hội VIII",
+                                "Đại hội IX",
+                                "Đại hội X",
+                                "Đại hội XI"
+                            ],
+                            "question": "Đại hội nào của Đảng đưa ra quan điểm chỉ đạo: \"Đổi mới căn bản và toàn diện giáo dục và đào tạo...”"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 35,
+                            "options": [
+                                "Năng lực lãnh đạo của Đảng, sự quản lý của Nhà nước chưa ngang tầm với yêu cầu thực tiễn phát triển Đất nước",
+                                "Bộ máy quản lý nhà nước còn cồng kềnh, cải cách thủ tục hành chính chậm, kém hiệu quả",
+                                "Phương thức hoạt động của Mặt trận tổ quốc và các đoàn thể bị hành chính hóa",
+                                "Cả 3 nội dung trên đều đúng"
+                            ],
+                            "question": "Sau hơn 20 năm Đổi mới, hệ thống chính trị nước ta hãy còn những hạn chế:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 34,
+                            "options": [
+                                "Bảo đảm lợi ích quốc gia dân tộc, đồng thời thực hiện nghĩa vụ quốc tế",
+                                "Phải có thái độ kiên quyết, cứng rắn nhằm giải quyết dứt điểm các vấn đề quốc tế",
+                                "Giữ vững độc lập, tự chủ, rộng mở và đa phương hóa, đa dạng hóa quan hệ đối ngoại",
+                                "Nắm vững 2 mặt vừa hợp tác D. vừa đấu tranh trong quan hệ đối ngoại"
+                            ],
+                            "question": "Chọn đáp án sai nói về tư tưởng chỉ đạo công tác đối ngoại của Đảng hiện nay:"
+                        },
+                        {
+                            "answer": 2,
+                            "id": 36,
+                            "options": [
+                                "Chuyên chính dân chủ nhân dân",
+                                "Chuyên chính vô sản",
+                                "Hệ thống chính trị",
+                                "Cả 3 đáp án trên đều sai"
+                            ],
+                            "question": "Từ Hội nghị TW 6 Khóa VI của Đảng (tháng 3/1989) đến nay, Việt Nam sử dụng khái niệm:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 37,
+                            "options": [
+                                "Bệnh chủ quan, duy ý chí, lối suy nghĩ và hành động giản đơn, nóng vội",
+                                "Bệnh quan liêu, duy ý chí, lối suy nghĩ và hành động giáo điều, sách vở",
+                                "Bệnh giáo điều, phi thực tế, lối suy nghi và hành động bất chấp D quy luật khách quan",
+                                "Bệnh bảo thủ, phi lịch sử, lồi . suy nghĩ và hành động thiếu cơ sở khoa học"
+                            ],
+                            "question": "Đại hội VI của Đảng (tháng 12/ 1986), chỉ ra nguyên nhân của những hạn chế về đối ngoại giai đoạn 1975 – 1986 là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 38,
+                            "options": [
+                                "Xây dựng Đảng trong hệ thống chính trị",
+                                "Xây dựng nhà nước pháp quyền xã hội chủ nghĩa",
+                                "Xây dựng mặt trận tổ quốc và các tổ chức chính trị - xã hội trong hệ thống chính trị",
+                                "Bao gồm cả 3 nội dung trên"
+                            ],
+                            "question": "Chủ trương xây dựng hệ thống chính trị, nội dung cơ bản là:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 39,
+                            "options": [
+                                "Chủ động hội nhập kinh tế quốc tế và khu vực theo tinh thần tranh thủ tối đa nguồn lực bên ngoài",
+                                "Chủ động hội nhập kinh tế quốc tế và khu vực theo tinh thần tranh thủ tối đa viện trợ quốc tế",
+                                "Chủ động hội nhập kinh tế quốc tế và khu vực theo tinh thần phát huy tối đa nội lực",
+                                "Chủ động hội nhập kinh tế quốc tế theo tinh thần đa phương hóa, đa dạng hóa quan hệ"
+                            ],
+                            "question": "Đại hội IX của Đảng (tháng 4/2001) nhấn mạnh chủ trương về kinh tế đối ngoại:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 40,
+                            "options": [
+                                "Đảng Cộng sản Việt Nam",
+                                "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+                                "Mặt trận Tổ quốc và các đoàn thể chính trị, xã hội",
+                                "Cả 3 câu trên đúng"
+                            ],
+                            "question": "Cấu trúc của hệ thống chính trị nước ta hiện nay bao gồm:"
+                        },
+                        {
+                            "answer": 0,
+                            "id": 41,
+                            "options": [
+                                "Văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu, vừa là động lực của sự phát triển kinh tế, xã hội",
+                                "Văn hóa là công cụ nâng cao dân trí, phổ cập giáo dục, đáp ứng nhu cầu vui chơi giải trí của nhẫn dân",
+                                "Văn hóa là quan hệ giao lưu tình cảm, sáng tạo nghệ thuật, hướng tới giá trị chân, thiện, mỹ",
+                                "Văn hóa là phương thức sáng tạo và hưởng thụ các giá trị nghệ thuật"
+                            ],
+                            "question": "Đảng ta xác định vị trí, vai trò của văn hóa:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 43,
+                            "options": [
+                                "Tự lực tự cường, rộng mở, linh hoạt hình thức và bước đi quan hệ đối ngoại",
+                                "Độc lập tự chủ, rộng mở, đa dạng hóa, đa phương hóa quan hệ đối ngoại",
+                                "Độc lập dân tộc, hữu nghị và hợp tác, nhiều hình thức trong quan hệ đối ngoại",
+                                "Dân chủ, rộng mở, hợp tác nhiều mặt bình đẳng, cùng có lợi"
+                            ],
+                            "question": "Nghị quyết số 13 của Bộ Chính trị (khóa VI) đánh dấu sự chuyển hướng toàn bộ chiến lược đối ngoại của Đảng, đặt nền móng hình thành đường lối đối ngoại:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 44,
+                            "options": [
+                                "Kết hợp đổi mới kinh tế với đối mới chính trị; đồi mới kinh tế là trọng tâm, từng bước đổi mới chính trị",
+                                "Đổi mới hệ thống chính trị toàn diện, đồng bộ, có kế thừa, bước đi phù hợp",
+                                "Đổi mới hệ thống chính trị nhằm tăng cường sự lãnh đạo của Đảng, hiệu lực quản lý của Nhà nước; phát huy quyền làm chủ của nhân dân",
+                                "Đổi mới hệ thống chính trị nhằm tăng cường chuyên chính, bảo vệ vững chắc chế độ XHCN và quyền lợi của nhân dân"
+                            ],
+                            "question": "Tìm đáp án sai khi nói về quan điểm chỉ đạo xây dựng hệ thống chính trị thời kỳ Đổi mới:"
+                        },
+                        {
+                            "answer": 1,
+                            "id": 45,
+                            "options": [
+                                "Đại hội IV",
+                                "Đại hội V",
+                                "Đại hội VI",
+                                "Đại hội VII"
+                            ],
+                            "question": "Đại hội nào của Đảng đưa ra quan điểm sau: \"Công tác đối ngoại phải trở thành một mặt trận chủ động, tích cực trong đấu tranh làm thất bại chính sách của các thế lực hiếu chiến mưu toan chống phá cách mạng nước ta”."
+                        },
+                        {
+                            "answer": 1,
+                            "id": 42,
+                            "options": [
+                                "Chính sách của Đảng; Luật pháp của Nhà nước; Nhân dân thực hiện",
+                                "Đảng lãnh đạo; Nhân dân làm chủ; Nhà nước quản lý",
+                                "Đảng quản lý; Nhà nước điều hành; Xã hội thực hiện",
+                                "Nhân dân tự quản; Nhà nước điều hành; Đảng ra đường lối"
+                            ],
+                            "question": "Quan điểm của Đảng về cơ chế chung trong quản lý toàn xã hội ở nước ta là:"
                         }
                     ],
                     "totalHour": 1,

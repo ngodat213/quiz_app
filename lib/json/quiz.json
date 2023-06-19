@@ -586,11 +586,10 @@
                             "friendly, protected, public",
                             "public, protected"
                         ],
-                        "answer": 3,
-                        "image": "res/images/1_8.png"
+                        "answer": 2
                     },
                     {
-                        "id": 1,
+                        "id": 15,
                         "question": "",
                         "options": [
                             "",

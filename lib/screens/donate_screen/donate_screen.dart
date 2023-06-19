@@ -12,7 +12,7 @@ class DonateScreen extends StatelessWidget {
             Container(
               width: 64,
               height: 64,
-child: ,
+              child: Image.asset('res'),
             ),
           ],
         ),
