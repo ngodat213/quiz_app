@@ -101,23 +101,30 @@ class _QuizScreenState extends State<QuizScreen> {
                         for (int i = 0;
                             i < widget.lesson.questions!.length;
                             i++)
-                          Container(
-                            width: 32,
-                            height: 32,
-                            margin: EdgeInsets.only(left: 8, bottom: 6),
-                            decoration: BoxDecoration(
-                              color: isChooseList[i] == -1
-                                  ? AppColors.border
-                                  : AppColors.body,
-                              borderRadius: BorderRadius.circular(100),
-                            ),
-                            alignment: Alignment.center,
-                            child: Text(
-                              (i + 1).toString(),
-                              style: TxtStyle.font16(
-                                isChooseList[i] != -1
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                numQuestion = i;
+                              });
+                            },
+                            child: Container(
+                              width: 32,
+                              height: 32,
+                              margin: EdgeInsets.only(left: 8, bottom: 6),
+                              decoration: BoxDecoration(
+                                color: isChooseList[i] == -1
                                     ? AppColors.border
-                                    : AppColors.titleActive,
+                                    : AppColors.body,
+                                borderRadius: BorderRadius.circular(100),
+                              ),
+                              alignment: Alignment.center,
+                              child: Text(
+                                (i + 1).toString(),
+                                style: TxtStyle.font16(
+                                  isChooseList[i] != -1
+                                      ? AppColors.border
+                                      : AppColors.titleActive,
+                                ),
                               ),
                             ),
                           )

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quiz_app/generated/l10n.dart';
 import 'package:quiz_app/models/lesson.dart';
 import 'package:quiz_app/themes/colors.dart';
+import 'package:quiz_app/themes/images.dart';
 import 'package:quiz_app/themes/txt_styles.dart';
 import 'package:quiz_app/widget/text_icon.dart';
 
@@ -34,13 +36,13 @@ class ContinueCard extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   TextIcon(
-                    '${quiz.questions?.length} Question',
-                    prefix: SvgPicture.asset('res/icons/note.svg'),
+                    '${quiz.questions?.length} ${S.current.question}',
+                    prefix: SvgPicture.asset(Images.iconNote),
                   ),
                   SizedBox(height: 4),
                   TextIcon(
-                    '1 hour 15 min',
-                    prefix: SvgPicture.asset('res/icons/clock.svg'),
+                    '1 ${S.current.hour} 15 ${S.current.min}',
+                    prefix: SvgPicture.asset(Images.iconClock),
                   ),
                   SizedBox(height: 12),
                   GestureDetector(
@@ -53,7 +55,7 @@ class ContinueCard extends StatelessWidget {
                       ),
                       alignment: Alignment.center,
                       child: Text(
-                        'Continue Quiz',
+                        S.current.continueQuiz,
                         style: TxtStyle.font12(AppColors.background),
                       ),
                     ),
@@ -65,7 +67,7 @@ class ContinueCard extends StatelessWidget {
           Positioned(
             top: 8,
             right: 16,
-            child: SvgPicture.asset('res/icons/trash.svg'),
+            child: SvgPicture.asset(Images.iconTrash),
           )
         ],
       ),

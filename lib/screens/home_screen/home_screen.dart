@@ -129,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen>
                     Padding(
                       padding: const EdgeInsets.only(left: 24),
                       child: Text(
-                        'Quiz',
+                        S.current.quiz,
                         style: TxtStyle.font18(AppColors.line),
                       ),
                     ),
@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen>
                     Padding(
                       padding: const EdgeInsets.only(left: 24),
                       child: Text(
-                        'Continue Quiz',
+                        S.current.continueQuiz,
                         style: TxtStyle.font18(AppColors.line),
                       ),
                     ),

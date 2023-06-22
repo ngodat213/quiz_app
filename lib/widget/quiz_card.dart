@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quiz_app/generated/l10n.dart';
 import 'package:quiz_app/models/quiz.dart';
 import 'package:quiz_app/screens/detail_screen/detail_screen.dart';
 import 'package:quiz_app/themes/colors.dart';
+import 'package:quiz_app/themes/images.dart';
 import 'package:quiz_app/themes/txt_styles.dart';
 import 'package:quiz_app/widget/text_icon.dart';
 
@@ -38,19 +40,22 @@ class QuizCard extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      quiz.name ?? "",
-                      style: TxtStyle.font16(AppColors.body),
+                    Container(
+                      width: MediaQuery.of(context).size.width - 182,
+                      child: Text(
+                        quiz.name ?? "",
+                        style: TxtStyle.font16(AppColors.body),
+                      ),
                     ),
                     SizedBox(height: 8),
                     TextIcon(
-                      '${quiz.lessons!.length} Lesson',
-                      prefix: SvgPicture.asset('res/icons/note.svg'),
+                      '${quiz.lessons!.length} ${S.current.lesson}',
+                      prefix: SvgPicture.asset(Images.iconNote),
                     ),
                     SizedBox(height: 4),
                     TextIcon(
-                      '1 hour 15 min',
-                      prefix: SvgPicture.asset('res/icons/clock.svg'),
+                      '1 ${S.current.hour} 15 ${S.current.min}',
+                      prefix: SvgPicture.asset(Images.iconClock),
                     ),
                   ],
                 )
@@ -63,7 +68,7 @@ class QuizCard extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  SvgPicture.asset('res/icons/star.svg'),
+                  SvgPicture.asset(Images.iconStar),
                   SizedBox(width: 4),
                   Text('${quiz.rating}')
                 ],

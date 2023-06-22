@@ -17,7 +17,7 @@ class TxtStyle {
         fontWeight: FontWeight.w400,
       );
 
-  static TextStyle font16(Color? color) => GoogleFonts.ubuntu(
+  static TextStyle font16(Color? color) => GoogleFonts.nunito(
         color: color ?? Colors.black,
         fontSize: Dimens.TEXT_SIZE_16,
         fontWeight: FontWeight.w500,
@@ -29,7 +29,7 @@ class TxtStyle {
         fontWeight: FontWeight.w400,
       );
 
-  static TextStyle font14(Color? color) => GoogleFonts.tenorSans(
+  static TextStyle font14(Color? color) => GoogleFonts.nunito(
         color: color ?? Colors.black,
         fontSize: Dimens.TEXT_SIZE_14,
         fontWeight: FontWeight.w400,
