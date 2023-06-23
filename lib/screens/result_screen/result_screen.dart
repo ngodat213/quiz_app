@@ -158,7 +158,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) => CheckAnswer(
-                                          quiz: widget.lesson,
+                                          lesson: widget.lesson,
                                           userChooice: widget.userChooice,
                                         ),
                                       ),

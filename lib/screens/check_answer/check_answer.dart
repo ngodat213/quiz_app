@@ -1,3 +1,4 @@
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/models/question.dart';
@@ -11,10 +12,10 @@ import 'package:quiz_app/utils/base_navigation.dart';
 class CheckAnswer extends StatefulWidget {
   const CheckAnswer({
     super.key,
-    required this.quiz,
+    required this.lesson,
     required this.userChooice,
   });
-  final Lesson quiz;
+  final Lesson lesson;
   final List<int> userChooice;
 
   @override
@@ -24,15 +25,25 @@ class CheckAnswer extends StatefulWidget {
 int numQuestion = 0;
 
 class _CheckAnswerState extends State<CheckAnswer> {
-  late List<bool> result = List.filled(widget.quiz.questions!.length, false);
+  late List<bool> result = List.filled(widget.lesson.questions!.length, false);
   @override
   void initState() {
     super.initState();
     numQuestion = 0;
-    for (int i = 0; i < widget.quiz.questions!.length; i++) {
-      bool res = widget.userChooice[i] == widget.quiz.questions![i].answer;
+    for (int i = 0; i < widget.lesson.questions!.length; i++) {
+      bool res = widget.userChooice[i] == widget.lesson.questions![i].answer;
       result[i] = res;
     }
+  }
+
+  Future<Map> loadBrand(String imageName) async {
+    Map files = new Map();
+    final Reference file = FirebaseStorage.instance.ref('quiz/$imageName');
+    final String fileUrl = await file.getDownloadURL();
+    files["url"] = fileUrl;
+    files["path"] = file.fullPath;
+    print(files);
+    return files;
   }
 
   @override
@@ -85,7 +96,7 @@ class _CheckAnswerState extends State<CheckAnswer> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            _header(quiz: widget.quiz),
+                            _header(quiz: widget.lesson),
                           ],
                         ),
                       ),
@@ -98,7 +109,9 @@ class _CheckAnswerState extends State<CheckAnswer> {
                   children: [
                     Wrap(
                       children: [
-                        for (int i = 0; i < widget.quiz.questions!.length; i++)
+                        for (int i = 0;
+                            i < widget.lesson.questions!.length;
+                            i++)
                           Container(
                             width: 32,
                             height: 32,
@@ -124,23 +137,31 @@ class _CheckAnswerState extends State<CheckAnswer> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Question  ${numQuestion + 1}: ${widget.quiz.questions![numQuestion].question ?? ""}",
+                              "Question  ${numQuestion + 1}: ${widget.lesson.questions![numQuestion].question ?? ""}",
                               style: TxtStyle.font16(AppColors.line),
                             ),
-                            if (widget.quiz.questions![numQuestion].image !=
+                            if (widget.lesson.questions![numQuestion].image !=
                                 null)
-                              Container(
-                                padding: EdgeInsets.symmetric(vertical: 8),
-                                child: Image.asset(
-                                    widget.quiz.questions![numQuestion].image!),
+                              FutureBuilder(
+                                future: loadBrand(widget
+                                    .lesson.questions![numQuestion].image!),
+                                builder: (context, snapshot) {
+                                  if (snapshot.hasError) {
+                                    return Container();
+                                  }
+                                  return Container(
+                                    padding: EdgeInsets.symmetric(vertical: 8),
+                                    child: Image.network(snapshot.data!['url']),
+                                  );
+                                },
                               ),
                             ListView.builder(
-                              itemCount: widget
-                                  .quiz.questions![numQuestion].options?.length,
+                              itemCount: widget.lesson.questions![numQuestion]
+                                  .options?.length,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
                                 final Question quesN =
-                                    widget.quiz.questions![numQuestion];
+                                    widget.lesson.questions![numQuestion];
                                 print(quesN.answer);
                                 return _chooseAsswer(
                                   choose: option[index],
@@ -178,7 +199,7 @@ class _CheckAnswerState extends State<CheckAnswer> {
             },
             suffix: () {
               setState(() {
-                if (numQuestion < widget.quiz.questions!.length - 1) {
+                if (numQuestion < widget.lesson.questions!.length - 1) {
                   numQuestion++;
                 }
               });

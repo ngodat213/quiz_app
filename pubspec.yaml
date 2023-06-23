@@ -36,6 +36,5 @@ flutter:
 
   assets:
     - lib/res/icons/
-    - lib/res/images/
 flutter_intl:
   enabled: true

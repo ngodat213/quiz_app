@@ -600,36 +600,303 @@
                             "image": "1_8.png"
                         }
                     ]
-                },{
+                },
+                {
                     "lessonId": 2,
                     "lessonName": 3,
-                    "name": "Overview OOP & Java 3",
+                    "name": "Inheritance & Polymorphism 1",
                     "totalHour": 1,
                     "totalMin": 0,
                     "totalPoint": 10,
                     "questions": [
                         {
                             "id": 1,
-                            "question": "",
+                            "question": "Cho biết kết quả của đoạn code sau: ",
                             "options": [
-                                "",
-                                "",
-                                "",
-                                ""
+                                "my father",
+                                "my son",
+                                "null",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 0,
+                            "image": "3_1.png"
+                        },
+                        {
+                            "id": 2,
+                            "question": "Đa thừa kế là:",
+                            "options": [
+                                "Lớp con có thể có một hoặc nhiều lớp cha",
+                                "Lớp con có một lớp cha",
+                                "Tất cả đều sai",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 4,
+                            "question": "Đơn thừa kế là:",
+                            "options": [
+                                "Lớp con có nhiều lớp cha",
+                                "Lớp con có một lớp cha",
+                                "Tất cả đều sai",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 6,
+                            "question": "Tất cả các ngôn ngữ hỗ trợ OOP đều hỗ trợ :",
+                            "options": [
+                                "Đơn thừa kể",
+                                "Đa thừa kế",
+                                "Đơn thừa kế và đa thừa kế",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 7,
+                            "question": "Tất cả các ngôn ngữ hỗ trợ OOP đều hỗ trợ :",
+                            "options": [
+                                "Đơn thừa kể",
+                                "Đa thừa kế",
+                                "Đơn thừa kế và đa thừa kế",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 12,
+                            "question": "Các loại thừa kế:",
+                            "options": [
+                                "Đơn thừa kế",
+                                "Đa thừa kế",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 13,
+                            "question": "Tính thừa kế là:",
+                            "options": [
+                                "Khả năng một lớp thừa hưởng data từ một hay nhiều lớp khác.",
+                                "Khả năng một lớp thừa hưởng code từ một hay nhiều lớp khác.",
+                                "Khả năng một lớp thừa hưởng data và code từ một hay nhiều lớp khác.",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 15,
+                            "question": "Overriding là kỹ thuật:",
+                            "options": [
+                                "Cho phép sửa code của một phương thức mà lớp con thừa kế từ lớp cha để lớp con phản ứng khác với lớp cha.",
+                                "Cho phép nhiều phương thức trùng tên nhưng khác tham số trong cùng một lớp.",
+                                "Tất cả đều đúng",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 18,
+                            "question": "Khi định nghĩa một lớp con:",
+                            "options": [
+                                "Được phép khai báo thêm các thành phần dữ liệu",
+                                "Được phép khai báo thêm các phương thức",
+                                "Tất cả đều sai",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 19,
+                            "question": "Khi định nghĩa một lớp con:",
+                            "options": [
+                                "Được phép khai báo thêm các thành phần dữ liệu",
+                                "Được phép khai báo thêm các phương thức",
+                                "Tất cả đều sai",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 20,
+                            "question": "Lớp A có phương thức M(). Lớp B là con của lớp A. Khi đó:",
+                            "options": [
+                                "Lớp B không được viết đè lên code của phương thức M() được thừa kể từ A",
+                                "Lớp B có thể viết đè lên code của phương thức M() được thừa kế từ A",
+                                "Lớp B bắt buộc phải viết đè lên code của phương thức M() được thừa kế từ A",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 3,
+                            "question": "Đoạn code có lỗi tại dòng 14 do:",
+                            "options": [
+                                "Lớp HangHoa không có constructor chuẩn",
+                                "Lớp HangSanhSu không có constructor chuẩn",
+                                "Lớp Hang hóa và HangSanhSu không có constructor chuẩn",
+                                "Đoạn code trên không có lỗi"
                             ],
                             "answer": 1,
-                            "image": "2_0.png"
-                        },{
-                            "id": 1,
-                            "question": "",
+                            "image": "3_3.png"
+                        },
+                        {
+                            "id": 5,
+                            "question": "Cho đoạn code sau:",
                             "options": [
-                                "",
-                                "",
-                                "",
-                                ""
+                                "Đoạn code trên có lỗi ở dòng 5",
+                                "Đoạn code trên có lỗi ở dòng 7",
+                                "Đoạn code trên có lỗi ở dòng 8",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 2,
+                            "image": "3_5.png"
+                        },
+                        {
+                            "id": 8,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "Pha le",
+                                "H01 Binh hoa VN 200000.0 Pha le",
+                                "null null 0.0 Pha le",
+                                "H01 Binh hoa 200000.0 Pha le"
+                            ],
+                            "answer": 3,
+                            "image": "3_8.png"
+                        },
+                        {
+                            "id": 9,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "my father",
+                                "my son",
+                                "null",
+                                "Tất cả đều sai"
                             ],
                             "answer": 1,
-                            "image": "1_7.png"
+                            "image": "3_9.png"
+                        },
+                        {
+                            "id": 10,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Có lỗi do dòng 5",
+                                "Có lỗi do dòng 13",
+                                "Có lỗi do dòng 15",
+                                "Không có lỗi"
+                            ],
+                            "answer": 2,
+                            "image": "3_10.png"
+                        },
+                        {
+                            "id": 11,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Đoạn code trên có lỗi ở dòng 6",
+                                "Đoạn code trên có lỗi ở dòng 11",
+                                "Đoạn code trên có lỗi ở dòng 12",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 3,
+                            "image": "3_11.png"
+                        },
+                        {
+                            "id": 14,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "my father my father",
+                                "my father my son",
+                                "my son my son",
+                                "my son my father"
+                            ],
+                            "answer": 2,
+                            "image": "3_14.png"
+                        },
+                        {
+                            "id": 16,
+                            "question": "Cho đoạn code sau. Dòng 15 có lỗi do: ",
+                            "options": [
+                                "Dùng từ khóa super trong lớp cha",
+                                "Lớp HangHoa không có constructor chuẩn",
+                                "Không truyền tham số vào super()",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 2,
+                            "image": "3_16.png"
+                        },
+                        {
+                            "id": 17,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "my father",
+                                "my son",
+                                "null",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": -1,
+                            "image": "3_17.png"
+                        },
+                        {
+                            "id": 21,
+                            "question": "Chọn đáp án dùng cho dòng comment // trong đoạn code sau: ",
+                            "options": [
+                                "super(m,t,n,g,tg,da,cs);",
+                                "super();",
+                                "super(t,m,n,g);",
+                                "super(m,t,n,g);"
+                            ],
+                            "answer": 3,
+                            "image": "3_21.png"
+                        },
+                        {
+                            "id": 22,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Đoạn code trên có lỗi ở dòng 5",
+                                "Đoạn code trên có lỗi ở dòng 7",
+                                "Đoạn code trên có lỗi ở dòng 8",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 3,
+                            "image": "3_22.png"
+                        },
+                        {
+                            "id": 23,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "Gom",
+                                "null null 0.0 null",
+                                "null null 0.0 Gom",
+                                "null null null Gom"
+                            ],
+                            "answer": 1,
+                            "image": "3_23.png"
+                        },
+                        {
+                            "id": 24,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Đoạn code trên có lỗi ở dòng 8",
+                                "Đoạn code trên có lỗi ở dòng 14",
+                                "Đoạn code trên có lỗi ở dòng 15",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 1,
+                            "image": "3_24.png"
+                        },
+                        {
+                            "id": 25,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "Gom",
+                                "null null 0.0 null",
+                                "null null 0.0 Gom",
+                                "null null null Gom"
+                            ],
+                            "answer": 2,
+                            "image": "3_25.png"
                         }
                     ]
                 }
@@ -2861,7 +3128,6 @@
                                 "Chống nạn mù chữ; giáo dục lại tinh thần nhân dân",
                                 "Tăng cường công tác văn hóa, văn nghệ; nâng cao đời sống tinh thần xã hội",
                                 "Xây dựng đời sống văn hóa mới; khắc phục tệ nạn xã hội"
-                                
                             ],
                             "question": "Sau khi giành được chính quyền (tháng 9/1945), chính phủ xác định các nhiệm vụ trước mắt, trong đó về văn hóa có 2 nhiệm vụ là:"
                         },
@@ -2920,7 +3186,6 @@
                             ],
                             "question": "Đại hội nào của Đảng xác định: \"Đảng cộng sản Việt Nam là đội tiên phong của giai cấp công nhân, đồng thời, là đội tiên phong của nhân dân lao động và của dân tộc Việt Nam”:"
                         },
-                        
                         {
                             "answer": 0,
                             "id": 21,
