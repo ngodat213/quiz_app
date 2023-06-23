@@ -20,6 +20,7 @@ dependencies:
   cloud_firestore: ^4.8.0 # firebase
   firebase_database: ^10.2.2 #realtime firebase
   intl_utils: ^2.8.3 #intl
+  firebase_storage: ^11.2.3
 
 dev_dependencies:
   flutter_test:

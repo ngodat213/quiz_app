@@ -66,7 +66,7 @@
                         {
                             "answer": 2,
                             "id": 1,
-                            "image": "res/images/1_2.png",
+                            "image": "1_2.png",
                             "options": [
                                 "Equal",
                                 "Not Equal",
@@ -89,7 +89,7 @@
                         {
                             "answer": 1,
                             "id": 1,
-                            "image": "res/images/1_3.png",
+                            "image": "1_3.png",
                             "options": [
                                 "true",
                                 "false",
@@ -222,7 +222,7 @@
                         {
                             "answer": 1,
                             "id": 1,
-                            "image": "res/images/1_4.png",
+                            "image": "1_4.png",
                             "options": [
                                 "12345",
                                 "12345 1",
@@ -267,7 +267,7 @@
                         {
                             "answer": 1,
                             "id": 1,
-                            "image": "res/images/1_5.png",
+                            "image": "1_5.png",
                             "options": [
                                 "6",
                                 "0",
@@ -279,7 +279,7 @@
                         {
                             "answer": 1,
                             "id": 1,
-                            "image": "res/images/1_6.png",
+                            "image": "1_6.png",
                             "options": [
                                 "one",
                                 "one, default",
@@ -302,7 +302,7 @@
                         {
                             "answer": 0,
                             "id": 1,
-                            "image": "res/images/1_7.png",
+                            "image": "1_7.png",
                             "options": [
                                 "Lỗi biên dịch (Compile time error referring to cast problem",
                                 "Xuất ra số ngẫu nhiên từ 1-10",
@@ -358,7 +358,7 @@
                         {
                             "answer": 2,
                             "id": 1,
-                            "image": "res/images/1_8.png",
+                            "image": "1_8.png",
                             "options": [
                                 "true false",
                                 "true",
@@ -434,7 +434,7 @@
                                 "Error: no menthod matching substring(int, char)"
                             ],
                             "answer": 1,
-                            "image": "res/images/2_0.png"
+                            "image": "2_0.png"
                         },
                         {
                             "id": 2,
@@ -446,7 +446,7 @@
                                 "100"
                             ],
                             "answer": 0,
-                            "image": "res/images/2_1.png"
+                            "image": "2_1.png"
                         },
                         {
                             "id": 3,
@@ -491,7 +491,7 @@
                                 "Lỗi khi thực thi chương trình (An error at rumtime)"
                             ],
                             "answer": 2,
-                            "image": "res/images/2_2.png"
+                            "image": "2_2.png"
                         },
                         {
                             "id": 7,
@@ -503,7 +503,7 @@
                                 "Lỗi biên dịch"
                             ],
                             "answer": 3,
-                            "image": "res/images/2_3.png"
+                            "image": "2_3.png"
                         },
                         {
                             "id": 8,
@@ -526,7 +526,7 @@
                                 "Tất cả đều đúng"
                             ],
                             "answer": 1,
-                            "image": "res/images/1_8.png"
+                            "image": "1_8.png"
                         },
                         {
                             "id": 10,
@@ -538,7 +538,7 @@
                                 "Câu A, B, C sai"
                             ],
                             "answer": 0,
-                            "image": "res/images/1_8.png"
+                            "image": "1_8.png"
                         },
                         {
                             "id": 11,
@@ -550,7 +550,7 @@
                                 ""
                             ],
                             "answer": 3,
-                            "image": "res/images/1_8.png"
+                            "image": "1_8.png"
                         },
                         {
                             "id": 12,
@@ -573,7 +573,7 @@
                                 "Câu A sai"
                             ],
                             "answer": 3,
-                            "image": "res/images/2_5.png"
+                            "image": "2_5.png"
                         },
                         {
                             "id": 1,
@@ -585,7 +585,7 @@
                                 ""
                             ],
                             "answer": 3,
-                            "image": "res/images/1_8.png"
+                            "image": "1_8.png"
                         },
                         {
                             "id": 1,
@@ -597,7 +597,39 @@
                                 ""
                             ],
                             "answer": 3,
-                            "image": "res/images/1_8.png"
+                            "image": "1_8.png"
+                        }
+                    ]
+                },{
+                    "lessonId": 2,
+                    "lessonName": 3,
+                    "name": "Overview OOP & Java 3",
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10,
+                    "questions": [
+                        {
+                            "id": 1,
+                            "question": "",
+                            "options": [
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "answer": 1,
+                            "image": "2_0.png"
+                        },{
+                            "id": 1,
+                            "question": "",
+                            "options": [
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "answer": 1,
+                            "image": "1_7.png"
                         }
                     ]
                 }

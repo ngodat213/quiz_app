@@ -1,3 +1,4 @@
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/generated/l10n.dart';
@@ -30,6 +31,16 @@ class _QuizScreenState extends State<QuizScreen> {
     setState(() {
       isChooseList = newIsChooseList;
     });
+  }
+
+  Future<Map> loadBrand(String imageName) async {
+    Map files = new Map();
+    final Reference file = FirebaseStorage.instance.ref('quiz/$imageName');
+    final String fileUrl = await file.getDownloadURL();
+    files["url"] = fileUrl;
+    files["path"] = file.fullPath;
+    print(files);
+    return files;
   }
 
   int numQuestion = 0;
@@ -144,10 +155,18 @@ class _QuizScreenState extends State<QuizScreen> {
                             ),
                             if (widget.lesson.questions![numQuestion].image !=
                                 null)
-                              Container(
-                                padding: EdgeInsets.symmetric(vertical: 8),
-                                child: Image.asset(widget
+                              FutureBuilder(
+                                future: loadBrand(widget
                                     .lesson.questions![numQuestion].image!),
+                                builder: (context, snapshot) {
+                                  if (snapshot.hasError) {
+                                    return Container();
+                                  }
+                                  return Container(
+                                    padding: EdgeInsets.symmetric(vertical: 8),
+                                    child: Image.network(snapshot.data!['url']),
+                                  );
+                                },
                               ),
                             ListView.builder(
                               itemCount: widget.lesson.questions![numQuestion]
