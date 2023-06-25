@@ -220,7 +220,7 @@
                             "question": "Nhược điểm của POP: "
                         },
                         {
-                            "answer": 1,
+                            "answer": 2,
                             "id": 1,
                             "image": "1_4.png",
                             "options": [
@@ -265,7 +265,7 @@
                             "question": "JDK bao gồm các thành phần chính"
                         },
                         {
-                            "answer": 1,
+                            "answer": 0,
                             "id": 1,
                             "image": "1_5.png",
                             "options": [
@@ -277,7 +277,7 @@
                             "question": "Cho biết kết quả của đoạn code sau: "
                         },
                         {
-                            "answer": 1,
+                            "answer": 2,
                             "id": 1,
                             "image": "1_6.png",
                             "options": [
@@ -388,28 +388,6 @@
                                 "Câu A, B sai"
                             ],
                             "question": "Các từ khóa cho cấu trúc rẽ nhánh của Java gồm: "
-                        },
-                        {
-                            "answer": 3,
-                            "id": 1,
-                            "options": [
-                                "Kó",
-                                "Có",
-                                "Câu A, B đúng",
-                                "Câu A, B rất đúng"
-                            ],
-                            "question": "Có ghét thằng Tuấn không?"
-                        },
-                        {
-                            "answer": 3,
-                            "id": 1,
-                            "options": [
-                                "Kó",
-                                "Có",
-                                "Câu A, B đúng",
-                                "Câu A, B rất đúng"
-                            ],
-                            "question": "Phong có thích Ngọc Linh không?"
                         }
                     ],
                     "totalHour": 1,
@@ -426,12 +404,12 @@
                     "questions": [
                         {
                             "id": 1,
-                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "question": "Cho biết kết quả đoạn code sau: ",
                             "options": [
                                 "Bic",
                                 "ic",
                                 "icy",
-                                "Error: no menthod matching substring(int, char)"
+                                "error: no method matching substring(int, char)"
                             ],
                             "answer": 1,
                             "image": "2_0.png"
@@ -440,17 +418,17 @@
                             "id": 2,
                             "question": "Cho biết kết quả của đoạn code sau: ",
                             "options": [
-                                "Lỗi biên dịch (compile time)",
+                                "Lỗi khi biên dịch (compile time)",
                                 "200",
                                 "100 200",
                                 "100"
                             ],
                             "answer": 0,
-                            "image": "2_1.png"
+                            "image": "2_2.png"
                         },
                         {
                             "id": 3,
-                            "question": "Trong static chỉ được sử dụng",
+                            "question": "Trong code static thì chỉ được sử dụng:",
                             "options": [
                                 "Biến static",
                                 "Hàm static",
@@ -472,12 +450,12 @@
                         },
                         {
                             "id": 5,
-                            "question": "Từ khóa this trong Java là:",
+                            "question": "Từ khóa this trong Java là :",
                             "options": [
                                 "Đối tượng cha của đối tượng đang thao tác",
                                 "Đối tượng đang thao tác",
-                                "Câu A, B đúng",
-                                "Câu A, B sai"
+                                "Cả 2 đều đúng",
+                                "Cả 2 đều sai"
                             ],
                             "answer": 1
                         },
@@ -488,29 +466,29 @@
                                 "Xuất ra màng hình: 0",
                                 "Không xuất gì ra màng hình",
                                 "Lỗi biên dịch (A compile time error",
-                                "Lỗi khi thực thi chương trình (An error at rumtime)"
+                                "Lỗi thực thi chương trình (An error at runtime)"
                             ],
                             "answer": 2,
-                            "image": "2_2.png"
+                            "image": "2_6.png"
                         },
                         {
                             "id": 7,
                             "question": "Cho biết kết quả của đoạn code sau: ",
                             "options": [
-                                "Xuất ra màng hình chuỗi: \"Hello\"",
-                                "Xuất ra màng hình chuỗi: \"ello\"",
-                                "Xuất ra màng hình chuỗi: \"elloH\"",
+                                "Hello",
+                                "ello",
+                                "elloH",
                                 "Lỗi biên dịch"
                             ],
                             "answer": 3,
-                            "image": "2_3.png"
+                            "image": "2_7.png"
                         },
                         {
                             "id": 8,
                             "question": "Chọn câu đúng nhất đối với hướng dẫn tạo lớp:",
                             "options": [
                                 "Lấy danh từ chính mô tả khái niệm làm tên lớp",
-                                "Lấy các danh từ mô tả cho khái niệm chính làm thuộc tính",
+                                "Lấy các danh từ mô tả cho khái niệm chính làm thuộc tính.",
                                 "Lấy các động từ tác động lên đối tượng làm phương thức",
                                 "Tất cả đều đúng"
                             ],
@@ -518,43 +496,41 @@
                         },
                         {
                             "id": 9,
-                            "question": "Khi một thành phân của class được khai báo modifier là friendly thì thành phần đó:",
+                            "question": "Khi một thành phần của class được khai báo modifier là friendly thì thành phần đó:",
                             "options": [
                                 "Không cho phép các đối tượng thuộc các class cùng package (cùng thư mục) truy cập",
                                 "Cho phép các đối tượng thuộc các class cùng package (cùng thư mục) truy cập",
                                 "Cho phép các đối tượng thuộc các class cùng package (cùng thư mục) và khác package truy cập",
                                 "Tất cả đều đúng"
                             ],
-                            "answer": 1,
-                            "image": "1_8.png"
+                            "answer": 1
                         },
                         {
                             "id": 10,
-                            "question": "Dòng code command xuất ra màn hình:",
+                            "question": "Dòng code command xuất ra màng hình: ",
                             "options": [
-                                "5,6,7",
-                                "0,0,0",
-                                "Báo lỗi cú pháo",
-                                "Câu A, B, C sai"
+                                "5, 6, 7",
+                                "0, 0, 0",
+                                "Báo lỗi cú pháp",
+                                "Câu A, B, C đều sai"
                             ],
                             "answer": 0,
-                            "image": "1_8.png"
+                            "image": "2_10.png"
                         },
                         {
                             "id": 11,
-                            "question": "Biên đối tượng trong Java là:",
+                            "question": "Biến đối tượng trong Java là:",
                             "options": [
-                                "Tham chiếu (Địa chỉ) của vùng nhớ chứa dữ liệu của đối tượng",
-                                "Biến ",
-                                "",
-                                ""
+                                "Tham chiếu (địa chỉ) của vùng nhớ chứa dữ liệu của đối tượng",
+                                "Bien static",
+                                "Biến cục bộ",
+                                "Tất cả đều sai"
                             ],
-                            "answer": 3,
-                            "image": "1_8.png"
+                            "answer": 0
                         },
                         {
                             "id": 12,
-                            "question": "Nếu modifier của lớp là public thì tên file .java:",
+                            "question": "Nếu modifier của lớp là public thì tên file .java :",
                             "options": [
                                 "Phải trùng với tên class, phân biệt chữ hoa và chữ thường",
                                 "Phải trùng với tên class, không phân biệt chữ hoa và chữ thường",
@@ -564,8 +540,8 @@
                             "answer": 0
                         },
                         {
-                            "id": 1,
-                            "question": "Cho đoạn code sau:",
+                            "id": 13,
+                            "question": "Cho đoạn code sau: ",
                             "options": [
                                 "Đoạn code trên đúng",
                                 "Đoạn code trên sai, phải sửa B b = new A(); thành A b = new B();",
@@ -573,31 +549,296 @@
                                 "Câu A sai"
                             ],
                             "answer": 3,
-                            "image": "2_5.png"
+                            "image":"2_13.png"
                         },
                         {
-                            "id": 1,
-                            "question": "",
+                            "id": 14,
+                            "question": "Đối với quyền truy cập nào thì cho phép truy cập các lớp con trong cùng gói với lớp cha?",
                             "options": [
-                                "",
-                                "",
-                                "",
-                                ""
+                                "private, friendly, protected.",
+                                "friendly, public.",
+                                "friendly, protected, public.",
+                                "public, protected."
                             ],
-                            "answer": 3,
-                            "image": "1_8.png"
+                            "answer": 2
                         },
                         {
-                            "id": 1,
-                            "question": "",
+                            "id": 15,
+                            "question": "Cho đoạn code sau: ",
                             "options": [
-                                "",
-                                "",
-                                "",
-                                ""
+                                "Đoạn code trên có lỗi ở dòng 6",
+                                "Đoạn code trên có lỗi ở dòng 7",
+                                "Đoạn code trên có lỗi ở dòng 12",
+                                "Đoạn code trên không có lỗi"
                             ],
                             "answer": 3,
-                            "image": "1_8.png"
+                            "image": "2_15.png"
+                        },
+                        {
+                            "id": 16,
+                            "question": "Cho khai báo sau: ",
+                            "options": [
+                                "s3 = s1 + s2;",
+                                "s3 = s1 - s2;",
+                                "s3 = s1 & s2;",
+                                "s3 = s1 && s2"
+                            ],
+                            "answer": 0,
+                            "image": "2_16.png"
+                        },
+                        {
+                            "id": 17,
+                            "question": "Phương thức khởi tạo (constructor) là phương thức được thực thi:",
+                            "options": [
+                                "Lúc hủy đối tượng.",
+                                "Lúc tạo đối tượng.",
+                                "Lúc sử dụng đối tượng.",
+                                "Cả ba câu trên đều đúng."
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 18,
+                            "question": "Cho biết kết quả câu lệnh sau: ",
+                            "options": [
+                                "Kết quả xuất ra giá trị từ 0 đến 99",
+                                "Kết quả xuất ra giá trị từ 0 đến 100",
+                                "Kết quả xuất ra giá trị từ 1 đến 99",
+                                "Kết quả xuất ra giá trị từ 0 đến 100"
+                            ],
+                            "answer": 0,
+                            "image": "2_18.png"
+                        },
+                        {
+                            "id": 19,
+                            "question": "Kỹ thuật overload cho phép:",
+                            "options": [
+                                "Khai báo các hàm trùng tên, trùng kiểu tham số nhưng khác kiểu trả trị của hàm.",
+                                "Khai báo các hàm khác tên, khác kiểu tham số, khác kiểu trả trị của hàm.",
+                                "Khai báo các hàm trùng tên, nhưng khác kiểu tham số hoặc khác số lượng tham số",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 20,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "x và y có modifier là private",
+                                "x và y có modifier là friendly",
+                                "x và y có modifier là protected",
+                                "x và y có modifier là public"
+                            ],
+                            "answer": 1,
+                            "image": "2_20.png"
+                        },
+                        {
+                            "id": 21,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "Compile time error",
+                                "Runtime error",
+                                "Xuất ra màng hình: \"Base.method\"",
+                                "Xuất ra màng hình: \"Over.method\""
+                            ],
+                            "answer": 3,
+                            "image": "2_21.png"
+                        },
+                        {
+                            "id": 22,
+                            "question": "Cho biết đoạn code sau: ",
+                            "options": [
+                                "19 20",
+                                "19 11",
+                                "Lỗi: Can't convert java lang Integer",
+                                "10 1"
+                            ],
+                            "answer": 2,
+                            "image": "2_22.png"
+                        },
+                        {
+                            "id": 23,
+                            "question": "Câu lệnh nào cho kết quả -4.0",
+                            "options": [
+                                "System.out.print(Math.floor(-4.7));",
+                                "System.out.print(Math.round(-4.7));",
+                                "System.out.print(Math.ceil(-4.7));",
+                                "System.out.print(Math.min(-4.7));"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 24,
+                            "question": "Cho biểu thức đúng để điền vào //Place test here để kết quả xuất ra là: Not Equal",
+                            "options": [
+                                "if(s==s2)",
+                                "if(s.equals(s2))",
+                                "if(s.equalsIgnoreCase(s2))",
+                                "Câu A, B đều đúng"
+                            ],
+                            "answer": 3,
+                            "image": "2_24.png"
+                        },
+                        {
+                            "id": 25,
+                            "question": "Trong java, khi khai báo một thuộc tính hoặc một hàm của một lớp mà không có từ khóa quyền truy cập thì mặc định quyền truy cập là gì?",
+                            "options": [
+                                "public",
+                                "protected",
+                                "friendly",
+                                "private"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 26,
+                            "question": " Đối tượng sống kể từ khi:",
+                            "options": [
+                                "Khởi tạo đối tượng (bằng toán tử new) cho đến hết chương trình",
+                                "Khởi tạo đối tượng (bằng toán tử new) cho đến hết phương thức chứa nó",
+                                "Khởi tạo đối tượng (bằng toán tử new) cho đến hết khối chứa nó",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 27,
+                            "question": "Một thành phần của class có modifier nào thì chỉ giới hạn các môi tượng khác gói, khác lớp, không có quan hệ cha-con không được truy cập đến thành phần đó:",
+                            "options": [
+                                "public",
+                                "private",
+                                "protected",
+                                "friendly"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 28,
+                            "question": "Khi xây dựng phương thức khởi tạo (constructor), việc thường làm là:",
+                            "options": [
+                                "Khởi tạo giá trị cho các thành phần dữ liệu của đối tượng",
+                                "Khai báo kiểu cho các thành phần dữ liệu của đối tượng",
+                                "Khai báo các phương thức của đối tượng",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 29,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "Lỗi biên dịch (Error at compile time)",
+                                "99",
+                                "198",
+                                "Lỗi thực thi chương trình (An error at runtime)"
+                            ],
+                            "answer": 0,
+                            "image": "2_29.png"
+                        },
+                        {
+                            "id": 30,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "Value for i = 1 Value for j = 1",
+                                "Value for i = 2 Value for j = 1",
+                                "Value for i = 2 Value for j = 2",
+                                "Câu A, B đúng"
+                            ],
+                            "answer": 3,
+                            "image": "2_30.png"
+                        },
+                        {
+                            "id": 31,
+                            "question": "Cho biết kết quả đoạn code sau: ",
+                            "options": [
+                                "A. Lỗi: amethod parameter does not match variable",
+                                "20 và 40",
+                                "10 và 40",
+                                "10 và 20"
+                            ],
+                            "answer": 2,
+                            "image": "2_31.png"
+                        },
+                        {
+                            "id": 32,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Thêm phương thức giao tiếp getX() cho lớp VongTron",
+                                "Thêm phương thức giao tiếp getY() cho lớp VongTron",
+                                "Bỏ từ khóa private ở dòng 4",
+                                "A, B, C đúng"
+                            ],
+                            "answer": 3,
+                            "image": "2_32.png"
+                        },
+                        {
+                            "id": 33,
+                            "question": "Từ khóa static có thể đứng trước:",
+                            "options": [
+                                "Thành phần dữ' liệu của lớp",
+                                "Phương thức của lớp",
+                                "Đoạn code",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 34,
+                            "question": "Trong hàm static thì chỉ được sử dụng:",
+                            "options": [
+                                "Bien static",
+                                "Hàm static ",
+                                "Cả biến và hàm static",
+                                "Chi biến và hàm bình thường trong lớp"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 35,
+                            "question": "Chọn vòng for phù hợp để điền vào dòng // Start For loop trong đoạn code sau",
+                            "options": [
+                                "for(int i = 0; i < ia.length() - 1; i++)",
+                                "for(int i = 0; i < ia.length(); i++)",
+                                "for(int i = 1; i < 4; i++)",
+                                "for(int i = 0; i < ia.length - 1; i++)"
+                            ],
+                            "answer": 3,
+                            "image": "2_35.png"
+                        },
+                        {
+                            "id": 36,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên có lỗi ở dòng 8 do lớp VongTron không có constructor chuẩn",
+                                "Đoạn code trên có lỗi ở dòng 9 do lớp Demo không thể truy cấp đến x",
+                                "Đoạn code trên có lỗi ở dòng 9 do lớp Demo không thể truy cấp đến y",
+                                "Câu B, C đều đúng"
+                            ],
+                            "answer": 3,
+                            "image": "2_36.png"
+                        },
+                        {
+                            "id": 37,
+                            "question": "Trong ngôn ngữ nào cho phép đa kế thừa:",
+                            "options": [
+                                "C#",
+                                "C++",
+                                "Java",
+                                "C"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 38,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Lỗi ở dòng 9 sửa lại bằng cách đặt modifier cho x của lớp hình học là protected",
+                                "Lỗi ở dòng 9 sửa lại bằng cách đặt modifier cho y của lớp hình học là protected",
+                                "Câu A, B đúng",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 2,
+                            "image": "2_38.png"
                         }
                     ]
                 },
@@ -656,14 +897,14 @@
                         },
                         {
                             "id": 7,
-                            "question": "Tất cả các ngôn ngữ hỗ trợ OOP đều hỗ trợ :",
+                            "question": "Tính đa hình:",
                             "options": [
-                                "Đơn thừa kể",
-                                "Đa thừa kế",
-                                "Đơn thừa kế và đa thừa kế",
+                                "Là đa hình thái, nhiều cách phản ứng khác nhau cho cùng một phương thức",
+                                "Có được là nhờ kỹ thuật override phương thức giữa 2 lớp cha con.",
+                                "Tất cả đều đúng",
                                 "Tất cả đều sai"
                             ],
-                            "answer": 3
+                            "answer": 2
                         },
                         {
                             "id": 12,
@@ -835,7 +1076,7 @@
                                 "null",
                                 "Tất cả đều sai"
                             ],
-                            "answer": -1,
+                            "answer": 1,
                             "image": "3_17.png"
                         },
                         {
@@ -897,6 +1138,1154 @@
                             ],
                             "answer": 2,
                             "image": "3_25.png"
+                        }
+                    ]
+                },
+                {
+                    "lessonId": 2,
+                    "lessonName": 4,
+                    "name": "Inheritance & Polymorphism 2",
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10,
+                    "questions": [
+                        {
+                            "id": 1,
+                            "question": "Overriding là kỹ thuật:",
+                            "options": [
+                                "Cho phép nhiều phương thức trùng tên nhưng khác số lượng tham số hoặc kiểu tham số trong cùng một lớp",
+                                "Cho phép sửa code của một hành vi mà lớp con thừa kế từ lớp cha để lớp con phản ứng khác với lớp cha",
+                                "Cho phép sửa code của các phương thức trùng tên trong các lớp khác nhau",
+                                "Cho phép nhiều phương thức trùng tên nhưng khác số lượng tham số ở lớp cha và lớp con"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 2,
+                            "question": "Khi định nghĩa lớp con, từ khóa extends trong Java :",
+                            "options": [
+                                "Đặt trước tên lớp con",
+                                "Đặt trước tên lớp cha",
+                                "Đặt sau tên lớp cha",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 3,
+                            "question": "Cho biết nội dung của biến baz sau khi thực thi đoạn mã sau",
+                            "options": [
+                                "red",
+                                "Lỗi biên dịch",
+                                "blue",
+                                "green"
+                            ],
+                            "answer": 3,
+                            "image": "4_3.png"
+                        },
+                        {
+                            "id": 4,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên có lỗi ở dòng 13",
+                                "Đoạn code trên có lỗi ở dòng 14",
+                                "Đoạn code trên có lỗi ở dòng 15",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 2,
+                            "image": "4_4.png"
+                        },
+                        {
+                            "id": 5,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Lớp PhongBan và lớp NhanVien có mối quan hệ cha - con",
+                                "Lớp PhongBan và lớp NhanVien có mối quan hệ bao gộp",
+                                "Lớp PhongBan và lớp NhanVien không có mối quan hệ với nhau",
+                                "Câu A, B đúng"
+                            ],
+                            "answer": 1,
+                            "image": "4_5.png"
+                        },
+                        {
+                            "id": 6,
+                            "question": "Lớp kế thừa từ lớp khác được gọi là:",
+                            "options": [
+                                "Lớp trừu tượng",
+                                "Lớp cơ sở (lớp cha)",
+                                "Lớp dẫn xuất (lớp con)",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 7,
+                            "question": "Cho biết kết quả đoạn code sau: ",
+                            "options": [
+                                "3 6",
+                                "3 4",
+                                "3 7",
+                                "7 3"
+                            ],
+                            "answer": 1,
+                            "image": "4_7.png"
+                        },
+                        {
+                            "id": 8,
+                            "question": " Khi muốn ghi đè, thay thế code của một hành vi ở lớp cha thì dùng kỹ thuật nào?",
+                            "options": [
+                                "Kỹ thuật overloading.",
+                                "Kỹ thuật phân cấp và kế thừa.",
+                                "Kỹ thuật overriding.",
+                                "Câu A và câu B."
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 9,
+                            "question": "Cho Parent là lớp cơ sở, Child là lớp dẫn xuất. Phát biểu nào sau đây không hợp lệ?",
+                            "options": [
+                                "Parent p1=new Child();",
+                                "Child c1=new Child();",
+                                "Parent p1=new Parent();",
+                                "Child c1=new Parent();"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 10,
+                            "question": "Chỉ thị super dùng để làm gì?",
+                            "options": [
+                                "Truy cập các thuộc tính và hàm của lớp hiện tại.",
+                                "Truy cập các thuộc tính và hàm của lớp con.",
+                                "Truy cập các thuộc tính và hàm của lớp cha.",
+                                "Tất cả đều đúng."
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 11,
+                            "question": "Khi khai báo final một class nào đó thì?",
+                            "options": [
+                                "Lớp đó không cho kế thừa.",
+                                "Lớp đó cho kế thừa.",
+                                "Lớp đó cho kế thừa nhưng không cho viết lại hàm của lớp đó.",
+                                "Không có vụ khai báo final của một lớp."
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 12,
+                            "question": "Một phương thức có thể được truy cập từ bất kì lớp hay gói phải khai báo là?",
+                            "options": [
+                                "private",
+                                "protectic",
+                                "public",
+                                "default"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 13,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên dùng kỹ thuật overriding",
+                                "Đoạn code trên dùng kỹ thuật overloading",
+                                "Tất cả đều sai",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 0,
+                            "image": "4_13.png"
+                        },
+                        {
+                            "id": 14,
+                            "question": "Lớp con được phép kế thừa các thành phần của lớp cha với phạm vi nào?",
+                            "options": [
+                                "protected và public",
+                                "protected và privated",
+                                "privated và public",
+                                "Phạm vi tùy ý"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 15,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên dùng kỹ thuật overriding",
+                                "Đoạn code trên dùng kỹ thuật overloading",
+                                "Tất cả đều sai",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 1,
+                            "image": "4_15.png"
+                        },
+                        {
+                            "id": 16,
+                            "question": "Cho biết kết quả đoạn code sau: ",
+                            "options": [
+                                "Đoạn code có lỗi vì chưa khởi tạo cho đối tượng pbk",
+                                "null null null",
+                                "Le Thi Hoa 06/12/2012 P01 Ke hoach",
+                                "Le Thi Hoa 06/12/2012"
+                            ],
+                            "answer": 0,
+                            "image": "4_16.png"
+                        },
+                        {
+                            "id": 17,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Không được khởi tạo đối tượng pbk tại dòng 11",
+                                "Được phép khởi tạo đối tượng pbk tại dòng 11",
+                                "Lớp NhanVien là lớp con của lớp PhongBan",
+                                "Câu B, C đều đúng"
+                            ],
+                            "answer": 1,
+                            "image": "4_17.png"
+                        },
+                        {
+                            "id": 18,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên có lỗi ở dòng 2",
+                                "Đoạn code trên có lỗi ở dòng 7",
+                                "Đoạn code trên có lỗi ở dòng 8",
+                                "Đoạn code trên không có lỗi"
+                            ],
+                            "answer": 1,
+                            "image": "4_18.png"
+                        },
+                        {
+                            "id": 19,
+                            "question": "Từ khóa nào cho phép phương thức main() gọi mà không tạo một thể hiện của lớp?",
+                            "options": [
+                                "public",
+                                "static",
+                                "final",
+                                "throws"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 20,
+                            "question": "Muốn kiểm tra một đối tượng có phải là thể hiện của một lớp nào đó không thì ta dùng toán tử nào trong Java?",
+                            "options": [
+                                "is",
+                                "instanceof",
+                                "has",
+                                "as"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 21,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên dùng kỹ thuật overriding",
+                                "Đoạn code trên dùng kỹ thuật overloading",
+                                "Câu A, B sai",
+                                "Câu A, B đúng"
+                            ],
+                            "answer": 3,
+                            "image": "4_21.png"
+                        },
+                        {
+                            "id": 22,
+                            "question": "Khi khai báo một lớp nằm trong một lớp khác thì điều nào sau là đúng:",
+                            "options": [
+                                "Lớp ngoài không được phép truy cập thẳng các thuộc tỉnh và hàm của lớp trong.",
+                                "Lớp trong thì truy cập thẳng các thuộc tính và hàm của lớp ngoài.",
+                                "Lớp ngoài muốn truy cập lớp trong thì phải định nghĩa một đối tượng lớp trong.",
+                                "Cả 3 câu trên đều đúng."
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 23,
+                            "question": "Dùng chỉ thị nào để không cho phép lớp con thay đổi một hàm nào đó của lớp cha?",
+                            "options": [
+                                "this",
+                                "super",
+                                "static",
+                                "final"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 24,
+                            "question": "Cho biết kết quả của đoạn code sau: ",
+                            "options": [
+                                "3 6",
+                                "3 3",
+                                "3 7",
+                                "7 3"
+                            ],
+                            "answer": 2,
+                            "image": "4_24.png"
+                        },
+                        {
+                            "id": 25,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Đoạn code trên có lỗi, sửa lại bằng cách bỏ dòng 4 đến dòng 7",
+                                "Đoạn code trên có lỗi, sửa lại bằng cách thêm constructor chuẩn cho lớp người",
+                                "Câu A, B đúng",
+                                "Câu A, B sai"
+                            ],
+                            "answer": 2,
+                            "image": "4_25.png"
+                        }
+                    ]
+                },
+                {
+                    "lessonId": 2,
+                    "lessonName": 5,
+                    "name": "Abstract class",
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10,
+                    "questions": [
+                        {
+                            "id": 1,
+                            "question": "Chọn câu đúng:",
+                            "options": [
+                                "Một biến thuộc lớp trừu tượng không thể chỉ đến lớp con",
+                                "Một biển thuộc lớp trừu tượng có thể chỉ đến lớp con",
+                                "Một biển thuộc lớp trừu tượng không thể chỉ đến D. lớp con trừ khi lớp con trừu tượng",
+                                "Một biển thuộc lớp trừu tượng có thể chỉ đến lớp con trừ khi lớp con trừu tượng"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 2,
+                            "question": "Constructor trong lớp trừu tượng:",
+                            "options": [
+                                "Mặc định là friendly",
+                                "Mặc định là final",
+                                "Mặc định là protected",
+                                "Mặc định là private"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 3,
+                            "question": "Chọn câu trả lời đúng:",
+                            "options": [
+                                "Ta có thể khai báo một lớp vừa là abstract vừa là final",
+                                "Ta không thể khai báo một lớp vừa là abstract vừa là final",
+                                "Ta chỉ có thể khai báo một lớp duy nhất vừa là abstract vừa là final trong một project",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 4,
+                            "question": "Chọn câu trả lời đúng:",
+                            "options": [
+                                "Hàm main tự hiểu lớp trừu tượng nên không cần phải khai báo khi truy xuất",
+                                "Hàm main tự hiểu lớp trừu tượng nên không cần khởi tạo giá trị khi truy xuất",
+                                "Hàm main không tự hiểu lớp trừu tượng nên cần phải khai bảo khi truy xuât",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 5,
+                            "question": "Chọn câu trả lời đúng:",
+                            "options": [
+                                "Mỗi lớp trừu tượng chỉ có duy nhất một constructor.",
+                                "Mỗi lớp trừu tượng có thể có nhiều constructor nhưng các constructor phải trùng tên với nhau",
+                                "Mỗi lớp trừu tượng chỉ có tối đa ba lớp constructor",
+                                "Mỗi lớp trừu tượng có thể có vô số constructor"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 6,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Có lỗi do dòng 3",
+                                "Có lỗi do dòng 7",
+                                "Có lỗi do dòng 9",
+                                "Không có lỗi"
+                            ],
+                            "answer": 1,
+                            "image": "5_6.png"
+                        },
+                        {
+                            "id": 7,
+                            "question": "Những modifier nào được phép kết hợp với từ khóa abstract:",
+                            "options": [
+                                "private",
+                                "protected",
+                                "final",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 8,
+                            "question": "Chọn đoạn code đúng chèn vào dòng thứ 8:",
+                            "options": [
+                                "extends Employee",
+                                "implements Employee",
+                                "super Employe",
+                                "Không cần thêm code"
+                            ],
+                            "answer": 0,
+                            "image": "5_8.png"
+                        },
+                        {
+                            "id": 9,
+                            "question": "Chọn câu trả lời đúng:",
+                            "options": [
+                                "Không cần dùng từ khóa extends khi kế thừa một lớp trừu tượng",
+                                "Có thể dùng kỹ thuật Overloading trong lớp trừu tượng",
+                                "Cả A và B đều đúng",
+                                "Cả A và B đều sai"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 10,
+                            "question": "Tỉnh đa hình của OOP nhờ:",
+                            "options": [
+                                "Kỹ thuật Overloading",
+                                "Kỹ thuật Overriding",
+                                "Tính đa thừa kế",
+                                "Tính đơn thừa kế"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 11,
+                            "question": "Quyền truy cập nào không được dùng kết hợp với từ khóa abstract?",
+                            "options": [
+                                "public",
+                                "protected",
+                                "private",
+                                "friendly"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 12,
+                            "question": "Lớp trừu tượng:",
+                            "options": [
+                                "Chỉ có thể là lớp cha",
+                                "Chỉ có thể là lớp con",
+                                "A và B đều đúng",
+                                "A và B đều sai"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 13,
+                            "question": "Cho đáp án đúng cho dòng 14 trong đoạn code sau:",
+                            "options": [
+                                "{ System.out.println(Name +\":\"+BasicSalary*5);}",
+                                "{ Name = \"Nguyen Van A\"; BasicSalary = \"1000\";}",
+                                "{ System.out.print(Name +\":\"+BasicSalary*5);}",
+                                "{}"
+                            ],
+                            "answer": 3,
+                            "image": "5_13.png"
+                        },
+                        {
+                            "id": 14,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Có lỗi ở dòng thứ 7",
+                                "Có lỗi ở dòng thứ 9",
+                                "Có lỗi ở dòng thứ 19",
+                                "Không có lỗi"
+                            ],
+                            "answer": 0,
+                            "image": "5_14.png"
+                        },
+                        {
+                            "id": 15,
+                            "question": "Lớp trừu tượng:",
+                            "options": [
+                                "Là kết quả của việc khái quát hóa quá cao đến nỗi không biết viết code như thế nào",
+                                "Là lớp có các tính chất chung của nhiều lớp cụ thể",
+                                "Là lớp có những phương thức chỉ khai báo mà không viết code",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 16,
+                            "question": "Chọn câu đúng về lớp trừu tượng:",
+                            "options": [
+                                "Là lớp có những phương thức chỉ được khai báo mà không viết code",
+                                "Là lớp có thể có những phương thức chỉ được khai báo mà không viết code",
+                                "Là lớp không có phương thức nào được khai báo mà không viết code",
+                                "Là lớp rỗng, không có phương thức nào được khai báo"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 17,
+                            "question": "Chọn câu trả lời đúng:",
+                            "options": [
+                                "Có thể dùng kỹ thuật Overloading trong lớp trừu tượng",
+                                "Có thể dùng kỹ thuật Overriding trong lớp trừu tượng",
+                                "Cả A và B đều đúng",
+                                "Cả A và B đều sai"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 18,
+                            "question": "Đặc điểm của lớp trừu tượng:",
+                            "options": [
+                                "Không thể khởi tạo một đối tượng thuộc lớp trừu tượng",
+                                "Có thể khởi tạo một đối tượng thuộc lớp trừu tượng",
+                                "Chỉ khởi tạo một đối tượng thuộc lớp trừu tượng khi đối tượng đó cũng trừu tượng",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 19,
+                            "question": "Chọn câu trả lời sai:",
+                            "options": [
+                                "Lớp trừu tượng được khai báo bằng từ khóa abstract",
+                                "Lớp trừu tượng không kết hợp được với private",
+                                "Lớp trừu tượng kết hợp được với protected",
+                                "Lớp trừu tượng kết hợp được với final"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 20,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Có lỗi do dòng 7",
+                                "Có lỗi do dòng 9",
+                                "Có lỗi do dòng 19",
+                                "Không có lỗi"
+                            ],
+                            "answer": 0,
+                            "image": "5_20.png"
+                        },
+                        {
+                            "id": 21,
+                            "question": "Chọn câu trả lời đúng:",
+                            "options": [
+                                "Lớp trừu tượng còn được gọi là lớp cụ thể hóa",
+                                "Lớp trừu tượng còn được gọi là lớp mô hình hóa",
+                                "Lớp trừu tượng còn được gọi là lớp tượng trưng hóa",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 22,
+                            "question": "Cú pháp khai báo lớp trừu tượng:",
+                            "options": [
+                                "modifier abstract class ClassName",
+                                "abstract modifier class ClassName",
+                                "Cả A và B đều đúng",
+                                "Cả A và B đều sai"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 23,
+                            "question": "Chọn câu trả lời sai:",
+                            "options": [
+                                "Một lớp cụ thể không thể kế thừa từ nhiều lớp trừu tượng",
+                                "Một lớp trừu tượng có thể có nhiều constructor",
+                                "Cả A và B đều đúng",
+                                "Cả A và B đều sai"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 24,
+                            "question": " Chọn câu trả lời đúng: ",
+                            "options": [
+                                "Phương thức có chỉ thi abstract thì phải có code",
+                                "Phương thức có chỉ thi abstract thì phải có code",
+                                "Phương thức có chỉ thị abstract thì không cần viết code",
+                                "Phương thức có chỉ thị abstract thì phải có từ khóa private"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 25,
+                            "question": " Chọn câu trả lời đúng về các phương thức trong lớp trừu tượng:  ",
+                            "options": [
+                                "Chỉ được khai báo mà không viết code",
+                                "Chỉ được khai báo mà phải viết code",
+                                "Có thể được khai báo mà không viết code",
+                                "Không cần phải khai báo vì lớp tự hiểu"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 26,
+                            "question": " Chọn câu trả lời đúng:  ",
+                            "options": [
+                                "Lớp trừu tượng là lớp có phương thức trừu tượng",
+                                "Lớp trừu tượng là lớp có su dung abstract",
+                                "Lớp trừu tượng là lớp có su dung abstract",
+                                "Tất cả đều đúng"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 27,
+                            "question": " Chọn câu trả lời sai:  ",
+                            "options": [
+                                " Một lớp cụ thể có thể kế thừa từ nhiều lớp trừu tượng",
+                                "Cả A và B đều đúng",
+                                "Một lớp cụ thể không thể truy xuất đến nhiều lớp trừu tượng",
+                                "Cả A và B đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 28,
+                            "question": " Chọn câu trả lời đúng:  ",
+                            "options": [
+                                "Không thể khởi tạo constructor default trong lớp trừu tượng",
+                                "Có thể khởi tạo constructor default trong lớp trừu tượng",
+                                "Không thể khởi tạo constructor default trong lớp trừu tượng",
+                                "Chỉ có thể khởi tạo constructor default trong lớp trừu tượng nếu lớp trừu tượng là lớp ngoại"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 29,
+                            "question": "Cho đoạn code sau: ",
+                            "options": [
+                                "Có lỗi do dòng 7",
+                                "Có lỗi do dòng 9",
+                                "Có lỗi do dòng 13",
+                                "Có lỗi do dòng 18"
+                            ],
+                            "answer": 3,
+                            "image": "5_29.png"
+                        },
+                        {
+                            "id": 30,
+                            "question": " Chọn câu trả lời đúng:  ",
+                            "options": [
+                                "Mọi lớp trừu tượng đều là lớp con của lớp Object",
+                                "Mọi lớp trừu tượng đều không phải là lớp con của lớp Object",
+                                "Lớp trừu tượng chỉ là lớp con của lớp Object khi lớp Object được khai báo",
+                                "Lớp trừu tượng chỉ là lớp con của lớp Object khi lớp Object không được khai báo"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 31,
+                            "question": " Cho đoạn code sau:  ",
+                            "options": [
+                                "Có lỗi ở dòng thứ 7",
+                                "Có lỗi ở dòng thứ 9",
+                                "Có lỗi ở dòng thứ 19",
+                                "Không có lỗi"
+                            ],
+                            "answer": 3,
+                            "image": "4_31.png"
+                        },
+                        {
+                            "id": 32,
+                            "question": " Chọn câu trả lời sai:  ",
+                            "options": [
+                                "Các tham số trong lớp trừu tượng là tham trị",
+                                "Lớp trừu tượng không thể kế thừa từ một lớp cụ thể",
+                                "Lớp trừu tượng là lớp con của lớp Object",
+                                "Lớp trừu tượng kết hợp được với static"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 33,
+                            "question": " Chọn câu trả lời đúng: ",
+                            "options": [
+                                "Chỉ có thể khởi tạo constructor default trong lớp trừu tượng",
+                                "Có thể khởi tạo constructor có tham số trong lớp trừu tượng trong mọi trường hợp",
+                                "Chỉ có thể khởi tạo constructor có tham số trong lớp trừu tượng nếu lớp trừu tượng là lớp con",
+                                "Chỉ có thể khởi tạo constructor có tham số trong lớp trừu tượng nếu lớp trừu tượng là lớp cha"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 34,
+                            "question": " Chọn câu trả lời đúng:  ",
+                            "options": [
+                                "Không thể khởi tạo đối tượng kiểu lớp trừu tượng vì lớp trừu tượng không được định nghĩa đầy đủ",
+                                "Có thể khởi tạo đối tượng kiểu lớp trừu tượng vì lớp trừu tượng không được định nghĩa đầy đủ",
+                                "Có thể khởi tạo đối tượng kiểu lớp trừu tượng vì lớp trừu tượng được định nghĩa đầy đủ",
+                                "Không thể khởi tạo đối tượng kiểu lớp trừu tượng vì lớp trừu tượng được định nghĩa đầy đủ"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 35,
+                            "question": " Chọn câu trả lời sai:  ",
+                            "options": [
+                                "Lớp trừu tượng không thể chứa các phương thức cụ the",
+                                "Khai báo lớp trừu tượng bằng từ khóa abstract",
+                                " Lớp trừu tượng có constructor chuân",
+                                "Lớp trừu tượng kết hợp được với public "
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 36,
+                            "question": " Chọn câu trả lời đúng:  ",
+                            "options": [
+                                " Một lớp trừu tượng không thể chứa phương thức final",
+                                "Một lớp final không thể chứa phương thức trừu tượng",
+                                "Cả A và B đều đúng",
+                                "Cả A và B đều sai "
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 37,
+                            "question": "Khi hiện thực lớp trừu tượng, từ khóa abstract trong java:",
+                            "options": [
+                                "Đặt trước tên lớp và phương thức trừu tượng",
+                                "Đặt sau tên lớp và phương thức trừu tượng",
+                                "Đặt sau tên lớp con và các phương thức trong lớp con",
+                                "Tất cả đều sai "
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 38,
+                            "question": "Chọn câu đúng:",
+                            "options": [
+                                "Phương thức không có chỉ thị abstract thì phải có code",
+                                "Phương thức không có chỉ thị abstract có thể không có code",
+                                "Phương thức không có chỉ thị abstract thì phải có từ khóa public",
+                                "Phương thức không có chỉ thị abstract thì phải có từ khóa private "
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 39,
+                            "question": "Cho đoạn code sau:",
+                            "options": [
+                                "Có lỗi ở dòng thứ 3",
+                                "Có lỗi ở dòng thứ 6 ",
+                                "Có lỗi ở dòng thứ 18",
+                                "Không có lỗi "
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 40,
+                            "question": "Trong một lớp, khi có một hành vi trừu tượng thì lớp đó phải là lớp như thế nào?",
+                            "options": [
+                                "Lớp trừu tượng.",
+                                "Lớp giao tiếp ",
+                                "Lớp final",
+                                "Lớp bình thường "
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 41,
+                            "question": "Chọn câu trả lời đúng: ",
+                            "options": [
+                                "Không thể sử dụng super và this trong lớp trừu tượng",
+                                "Có thể sử dụng super và this trong lớp trừu tượng",
+                                "Có thể sử dụng super nhưng không thể sử dụng this trong lớp trừu tượng",
+                                "Không thể sử dụng super nhưng có thể sử dụng this trong lớp trừu tượng "
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 42,
+                            "question": "Những modifier nào không được phép kết hợp với từ khóa abstract:  ",
+                            "options": [
+                                "public",
+                                "protected",
+                                "final",
+                                "Tất cả đều sai "
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 43,
+                            "question": "Chọn câu trả lời đúng:  ",
+                            "options": [
+                                "Lớp trừu tượng có thể thừa kế từ một lớp cụ thể",
+                                "Lớp trừu tượng không thể thừa kế từ một lớp cụ thể",
+                                "Lớp trừu tượng có thể thừa kế từ một lớp cụ thể nếu lớp đó là lớp nội",
+                                "Lớp trừu tượng có thể thừa kế từ một lớp cụ thể nếu lớp đó là lớp ngoại "
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 44,
+                            "question": " Kiểu trả trị của constructor trong lớp trừu tượng :  ",
+                            "options": [
+                                "int",
+                                "String",
+                                "char",
+                                "Không có kiểu trả trị nào "
+                            ],
+                            "answer": 3
+                        }
+                    ]
+                },
+                {
+                    "lessonId": 2,
+                    "lessonName": 6,
+                    "name": "Exception",
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10,
+                    "questions": [
+                        {
+                            "id": 1,
+                            "question": "ArithmeticException là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do không đúng dạng số",
+                                "Lỗi do truy cập class bị cấm",
+                                "Lỗi do không tìm thấy file",
+                                "Lỗi do thực thi 1 phép toán"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 2,
+                            "question": "SecurityException là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do không đúng dạng số",
+                                "Lỗi do truy cập class bị cấm",
+                                "Lỗi do truy cập bị cấm",
+                                "Lỗi do viết sai tên phương thức"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 3,
+                            "question": "NoSuchMethodException là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do không đúng dạng số",
+                                "Lỗi do truy cập class bị cấm",
+                                "Lỗi do không tìm thấy file",
+                                "Lỗi do viết sai tên phương thức (hành vi)"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 4,
+                            "question": "NullPointerException là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do truy xuất phương thức mà chưa khởi tạo",
+                                "Lỗi do truy cập class bị cấm",
+                                "Lỗi do không tìm thấy file",
+                                "Lỗi do viết sai tên phương thức"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 5,
+                            "question": "IOexception là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do không đúng dạng số",
+                                "Lỗi nhập xuất",
+                                "Lỗi do không tìm thấy file",
+                                "Lỗi do viết sai tên phương thức"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 6,
+                            "question": "ArrayIndexOutOfBoundsException là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do không đúng dạng số",
+                                "Lỗi do truy cập class bị cấm",
+                                "Lỗi do truy cập ngoài tầm của mảng",
+                                "Lỗi do viết sai tên phương thức"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 7,
+                            "question": "IllegalAccessException là lớp quản lý lỗi gì trong java?",
+                            "options": [
+                                "Lỗi do không đúng dạng số",
+                                "Lỗi do truy cập class bị cấm",
+                                "Lỗi do không tìm thấy file",
+                                "Lỗi do viết sai tên phương thức"
+                            ],
+                            "answer": 1
+                        }
+                    ]
+                },
+                {
+                    "lessonId": 2,
+                    "lessonName": 7,
+                    "name": "Interface & Package",
+                    "totalHour": 1,
+                    "totalMin": 0,
+                    "totalPoint": 10,
+                    "questions": [
+                        {
+                            "id": 1,
+                            "question": "Trong một file java, thứ tự đúng của các khai báo import, class, package là gì?",
+                            "options": [
+                                "package, import, class",
+                                "class, import, package",
+                                "import, package, class",
+                                "package, class, import"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 2,
+                            "question": "Gói nào sau đây là gói mặc định trong java?",
+                            "options": [
+                                "java.io",
+                                "java.math",
+                                "java.text",
+                                "java.lang"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 3,
+                            "question": "Khi một lớp cụ thể viết lại các phương thức trong 1 Interface thì modifier của các phương thức trong lớp đó phải là gì?",
+                            "options": [
+                                "friendly",
+                                "private",
+                                "public",
+                                "protected"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 4,
+                            "question": "Các phương thức trong 1 Interface được dùng với các modifier nào?",
+                            "options": [
+                                "public và private",
+                                "public và friendly",
+                                "protected và private",
+                                "protected và public"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 5,
+                            "question": "Phát biểu nào sau đây là sai về đặc điểm của interface.",
+                            "options": [
+                                "Interface là một tập hợp các hành vi mà không có cài đặt code.",
+                                "Hành vi trong interface phải có quyền truy cập là protected hoặc friendly.",
+                                "Các lớp implements một interface thì phải viết code cho các hành vi của interface đó.",
+                                "Lớp trừu tượng implements một implements thì có thể không cần phải viết code cho các hành vi của interface đó."
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 6,
+                            "question": "Chọn đoạn code gây lỗi khi biên dịch:",
+                            "options": [
+                                "import java.awt.*;\npackage Mypackage;\nclass Myclass {}",
+                                "package MyPackage;\nimport java.awt.*;\nclass MyClass{}",
+                                "/*This is a comment */\npackage MyPackage;\nimport java.awt.*;\nclass MyClass{}",
+                                "Tất cả đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 7,
+                            "question": " Để đọc một tập tin, ta sử dụng gói nào trong các gói sau đây?",
+                            "options": [
+                                "Java.io",
+                                "Java.util",
+                                "Java.Data",
+                                "Java.File"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 8,
+                            "question": "Chọn câu đúng:",
+                            "options": [
+                                "Các biến Interface là static",
+                                "Một lớp không thể khai báo vừa là final và vừa là abstract",
+                                "Interface không thể kể thua Interface cha",
+                                "Một lớp trừu tượng bắt buộc phải hiện thực các method của Interface"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 9,
+                            "question": "Dùng từ khóa gì để có được đa kế thừa trong java.",
+                            "options": [
+                                "abstract",
+                                "package",
+                                "interface",
+                                "final"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 10,
+                            "question": "Một class muốn thực thi được trong một thread riêng thì phải implements interface nào?",
+                            "options": [
+                                "Run",
+                                "Runnable",
+                                "Threadable",
+                                "Executable3"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 11,
+                            "question": "Khai báo nào sau đây là khai báo của phương thức trừu tượng (abstract)?",
+                            "options": [
+                                "public void add();",
+                                "public abstract void add(){}",
+                                "public abstract add();",
+                                "public virtual add();"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 12,
+                            "question": "Cú pháp nào sau đây không hợp lệ khi khai báo 1 hằng a=10 trong Interface:",
+                            "options": [
+                                "public interface int a=10;",
+                                "int a=10;",
+                                "final int a=10;",
+                                "public int a=10;"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 13,
+                            "question": "Câu nào sau đây sai:",
+                            "options": [
+                                "Interface được xem như 1 lớp trừu tượng",
+                                "Package gồm các Interface, các class và các package con",
+                                "Khi sao chép các tập tin .class trong một gói thì phải sao chép cả các thư mục chứa lần cấu trúc của các thư mục(gói) có liên quan",
+                                "A, B, C đều sai"
+                            ],
+                            "answer": 3
+                        },
+                        {
+                            "id": 14,
+                            "question": "Chọn câu đúng:",
+                            "options": [
+                                "Phương thức Interface là ngầm định kiểu public",
+                                "Các biển Interface là public, non-static và final",
+                                "Phương thức có thể là static hoặc non-static",
+                                "Trong phương thức Interface dùng chỉ thị import"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 15,
+                            "question": "Trong các phát biểu sau đây, phát biểu nào sai?",
+                            "options": [
+                                "1 package có thể bao gồm các class, các Interface và các package con",
+                                "Câu lệnh khai báo package phải là dòng đầu tiên trong code java",
+                                "Một class khi được định nghĩa mà không định nghĩa package của nó thì trình biên dịch sẽ báo lỗi",
+                                "Mỗi package là một thư mục chứa lớp"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 16,
+                            "question": "Một lớp có thể hiện thực tối đa bao nhiêu Interface?",
+                            "options": [
+                                "Nhiều Interface",
+                                "3 Interface",
+                                "5 Interface",
+                                "Duy nhất 1 Interface"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 17,
+                            "question": "Cú pháp nào dùng để sử dụng package?",
+                            "options": [
+                                "import PackageName.*; và import PackageName.ClassName;",
+                                "import PackageCha.PackageCon và import PackageCha.PackageCon.ClassName",
+                                "Cả A và B đúng",
+                                "Cả A và B đều sai"
+                            ],
+                            "answer": 2
+                        },
+                        {
+                            "id": 18,
+                            "question": "Chọn câu đúng:",
+                            "options": [
+                                "Mỗi package chứa các class và interface",
+                                "Mỗi interface chứa các class và package",
+                                "Câu A và B đều đúng",
+                                "Câu A và B đều sai"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 19,
+                            "question": "Interface là gì?",
+                            "options": [
+                                "Là một lớp hoàn toàn trừu tượng",
+                                "Chỉ gồm các hẳng",
+                                "Có kiểu tham chiếu là public hoặc friendly",
+                                "Tất cả đều đúng."
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 20,
+                            "question": "Dùng từ khoá nào sau đây để hiện thực 1 Interface:",
+                            "options": [
+                                "implement",
+                                "implements",
+                                "Implement",
+                                "Implements"
+                            ],
+                            "answer": 1
+                        },
+                        {
+                            "id": 21,
+                            "question": "Các từ nào sau đây là từ khoá trong java?",
+                            "options": [
+                                "implements",
+                                "malloc",
+                                "calloc",
+                                "FALSE"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 22,
+                            "question": "Cú pháp nào đúng để tạo package?",
+                            "options": [
+                                "package PackageCha[.PackageCon];",
+                                "package PackageCha.[PackageCon];",
+                                "package PackageCha(PackageCon);",
+                                "package PackageCha.PackageCon();"
+                            ],
+                            "answer": 0
+                        },
+                        {
+                            "id": 23,
+                            "question": "Để sử dụng được các class không cùng một package, từ khoá nào sau đây sẽ được sử dụng:",
+                            "options": [
+                                "export",
+                                "extend",
+                                "import",
+                                "include"
+                            ],
+                            "answer": 2
                         }
                     ]
                 }
@@ -3330,17 +4719,6 @@
                             "question": "Đại hội nào của Đảng đưa ra quan điểm chỉ đạo: \"Đổi mới căn bản và toàn diện giáo dục và đào tạo...”"
                         },
                         {
-                            "answer": 3,
-                            "id": 35,
-                            "options": [
-                                "Năng lực lãnh đạo của Đảng, sự quản lý của Nhà nước chưa ngang tầm với yêu cầu thực tiễn phát triển Đất nước",
-                                "Bộ máy quản lý nhà nước còn cồng kềnh, cải cách thủ tục hành chính chậm, kém hiệu quả",
-                                "Phương thức hoạt động của Mặt trận tổ quốc và các đoàn thể bị hành chính hóa",
-                                "Cả 3 nội dung trên đều đúng"
-                            ],
-                            "question": "Sau hơn 20 năm Đổi mới, hệ thống chính trị nước ta hãy còn những hạn chế:"
-                        },
-                        {
                             "answer": 1,
                             "id": 34,
                             "options": [
@@ -3350,6 +4728,17 @@
                                 "Nắm vững 2 mặt vừa hợp tác D. vừa đấu tranh trong quan hệ đối ngoại"
                             ],
                             "question": "Chọn đáp án sai nói về tư tưởng chỉ đạo công tác đối ngoại của Đảng hiện nay:"
+                        },
+                        {
+                            "answer": 3,
+                            "id": 35,
+                            "options": [
+                                "Năng lực lãnh đạo của Đảng, sự quản lý của Nhà nước chưa ngang tầm với yêu cầu thực tiễn phát triển Đất nước",
+                                "Bộ máy quản lý nhà nước còn cồng kềnh, cải cách thủ tục hành chính chậm, kém hiệu quả",
+                                "Phương thức hoạt động của Mặt trận tổ quốc và các đoàn thể bị hành chính hóa",
+                                "Cả 3 nội dung trên đều đúng"
+                            ],
+                            "question": "Sau hơn 20 năm Đổi mới, hệ thống chính trị nước ta hãy còn những hạn chế:"
                         },
                         {
                             "answer": 2,
@@ -3419,6 +4808,17 @@
                         },
                         {
                             "answer": 1,
+                            "id": 42,
+                            "options": [
+                                "Chính sách của Đảng; Luật pháp của Nhà nước; Nhân dân thực hiện",
+                                "Đảng lãnh đạo; Nhân dân làm chủ; Nhà nước quản lý",
+                                "Đảng quản lý; Nhà nước điều hành; Xã hội thực hiện",
+                                "Nhân dân tự quản; Nhà nước điều hành; Đảng ra đường lối"
+                            ],
+                            "question": "Quan điểm của Đảng về cơ chế chung trong quản lý toàn xã hội ở nước ta là:"
+                        },
+                        {
+                            "answer": 1,
                             "id": 43,
                             "options": [
                                 "Tự lực tự cường, rộng mở, linh hoạt hình thức và bước đi quan hệ đối ngoại",
@@ -3449,17 +4849,6 @@
                                 "Đại hội VII"
                             ],
                             "question": "Đại hội nào của Đảng đưa ra quan điểm sau: \"Công tác đối ngoại phải trở thành một mặt trận chủ động, tích cực trong đấu tranh làm thất bại chính sách của các thế lực hiếu chiến mưu toan chống phá cách mạng nước ta”."
-                        },
-                        {
-                            "answer": 1,
-                            "id": 42,
-                            "options": [
-                                "Chính sách của Đảng; Luật pháp của Nhà nước; Nhân dân thực hiện",
-                                "Đảng lãnh đạo; Nhân dân làm chủ; Nhà nước quản lý",
-                                "Đảng quản lý; Nhà nước điều hành; Xã hội thực hiện",
-                                "Nhân dân tự quản; Nhà nước điều hành; Đảng ra đường lối"
-                            ],
-                            "question": "Quan điểm của Đảng về cơ chế chung trong quản lý toàn xã hội ở nước ta là:"
                         }
                     ],
                     "totalHour": 1,

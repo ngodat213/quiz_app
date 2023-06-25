@@ -112,18 +112,25 @@ class _CheckAnswerState extends State<CheckAnswer> {
                         for (int i = 0;
                             i < widget.lesson.questions!.length;
                             i++)
-                          Container(
-                            width: 32,
-                            height: 32,
-                            margin: EdgeInsets.only(left: 8, bottom: 6),
-                            decoration: BoxDecoration(
-                              color: result[i] ? Colors.green : Colors.red,
-                              borderRadius: BorderRadius.circular(100),
-                            ),
-                            alignment: Alignment.center,
-                            child: Text(
-                              (i + 1).toString(),
-                              style: TxtStyle.font16(AppColors.border),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                numQuestion = i;
+                              });
+                            },
+                            child: Container(
+                              width: 32,
+                              height: 32,
+                              margin: EdgeInsets.only(left: 8, bottom: 6),
+                              decoration: BoxDecoration(
+                                color: result[i] ? Colors.green : Colors.red,
+                                borderRadius: BorderRadius.circular(100),
+                              ),
+                              alignment: Alignment.center,
+                              child: Text(
+                                (i + 1).toString(),
+                                style: TxtStyle.font16(AppColors.border),
+                              ),
                             ),
                           )
                       ],
