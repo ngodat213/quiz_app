@@ -1452,7 +1452,7 @@
                             "options": [
                                 "Một biến thuộc lớp trừu tượng không thể chỉ đến lớp con",
                                 "Một biển thuộc lớp trừu tượng có thể chỉ đến lớp con",
-                                "Một biển thuộc lớp trừu tượng không thể chỉ đến D. lớp con trừ khi lớp con trừu tượng",
+                                "Một biển thuộc lớp trừu tượng không thể chỉ đến lớp con trừ khi lớp con trừu tượng",
                                 "Một biển thuộc lớp trừu tượng có thể chỉ đến lớp con trừ khi lớp con trừu tượng"
                             ],
                             "answer": 1
@@ -1731,7 +1731,7 @@
                             "question": " Chọn câu trả lời đúng:  ",
                             "options": [
                                 "Lớp trừu tượng là lớp có phương thức trừu tượng",
-                                "Lớp trừu tượng là lớp có su dung abstract",
+                                "Lớp trừu tượng là sản phẩm của quá trình khái quát hóa quá cao",
                                 "Lớp trừu tượng là lớp có su dung abstract",
                                 "Tất cả đều đúng"
                             ],
@@ -1792,7 +1792,7 @@
                                 "Không có lỗi"
                             ],
                             "answer": 3,
-                            "image": "4_31.png"
+                            "image": "5_31.png"
                         },
                         {
                             "id": 32,
@@ -1880,7 +1880,8 @@
                                 "Có lỗi ở dòng thứ 18",
                                 "Không có lỗi "
                             ],
-                            "answer": 0
+                            "answer": 0,
+                            "image": "5_39.png"
                         },
                         {
                             "id": 40,
