@@ -162,9 +162,16 @@ class _QuizScreenState extends State<QuizScreen> {
                                   if (snapshot.hasError) {
                                     return Container();
                                   }
-                                  return Container(
-                                    padding: EdgeInsets.symmetric(vertical: 8),
-                                    child: Image.network(snapshot.data!['url']),
+                                  if (snapshot.hasData) {
+                                    return Container(
+                                      padding:
+                                          EdgeInsets.symmetric(vertical: 8),
+                                      child:
+                                          Image.network(snapshot.data!['url']),
+                                    );
+                                  }
+                                  return Center(
+                                    child: CircularProgressIndicator(),
                                   );
                                 },
                               ),
